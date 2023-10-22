@@ -2,57 +2,72 @@
 layout: default
 ---
 
-<div class="mods-cont">
-    <div class="big">
-        <div class="big-img">
-            {% include yt-embed.html id="5Xra4QS0vi4" width=352 height=225 %}
+<div class="container container__inner-page container__tankopedia">
+    <h1 class="heading-1">Моды</h1>
+    <div class="tankopedia">
+        <div class="nation-select">
+            <ul class="nation-select_list js-nation-select-list">
+                <li class="nation-select_item nation-select_item__current">
+                    <a class="nation-select_link nation-select_link__usa" href="mods.html">Рестайлинги</a>
+                </li>
+                <li class="nation-select_item">
+                    <a class="nation-select_link nation-select_link__ussr" href="mod-sound.html">Звуковые моды</a>
+                </li>
+            </ul>
         </div>
-        <div class="big-desc">
-            <h2 class="big-head">WOT ЭТО КЛАССИКА!</h2>
-            <p class="big-desc-text">
-                Серия модификаций «WoT это Классика!» - это комплект интерфейсных, графических и звуковых модов,
-                разработанных для того, чтобы вернуть вам ощущение игры в "те самые танки". Они позволят вам
-                окунуться в атмосферу классической игры и создадут ностальгическую атмосферу, которая привлекала
-                многих игроков к игре.
-            </p>
-            <p class="big-desc-text">
-                Благодаря этим модификациям, вы сможете насладиться игрой, как в ее лучшие годы, и ощутить все
-                те эмоции, которые вы испытывали раньше.
-            </p>
-            <br>
-            <a class="orange-button" href="/mods/download">
-                <span class="big-orange-button">
-                    <span class="big-orange-button-right">Скачать моды</span>
-                </span>
-            </a>
-        </div>
-    </div>
-    <div class="wide wide-top">
-        <div class="wide-content">
-            <div class="b4r r-img-text">
-                {% include block.html url="https://drive.google.com/file/d/18uut77Ka6M8BqpbhhpQijIVNfYwm81yK/view?usp=drive_link" image="/assets/img/mods/login.png" width="214" height="132" %}
-                {% include block.html url="https://drive.google.com/drive/folders/1Bv_BxHXXZtcuftR0zf5U_wzCYpRENtWl?usp=drive_link" image="/assets/img/mods/hangar_gui.png" width="214" height="132" %}
-                {% include block.html url="https://drive.google.com/file/d/1OYkmN_9_89XFvOufznUV6WdN2uyox2ol/view?usp=drive_link" image="/assets/img/mods/hangar.png" width="214" height="132" %}
-                {% include block.html url="https://drive.google.com/file/d/1Ta025dLowoof9NFmVHwkehmP0GIuuihq/view?usp=drive_link" image="/assets/img/mods/prem_hangar.png" width="214" height="132" %}
-                {% include block.html url="https://drive.google.com/file/d/1ZlK4I3VVVll8iPMFChLL5p2yPuCyaT2w/view?usp=drive_link" image="/assets/img/mods/prem_hangar9.22.png" width="214" height="132" %}
-                {% include block.html url="https://drive.google.com/drive/folders/1l6oK5pT5bz550kgIu0jJfkergnX6CZoZ?usp=drive_link" image="/assets/img/mods/battle_gui.png" width="214" height="132" %}
-                {% include block.html url="https://drive.google.com/file/d/1j84yW3UbY5t9Bzd_q6xgQxRA6Tyrf1-1/view?usp=sharing" image="/assets/img/mods/ssb.png" width="214" height="132" %}
-                {% include block.html url="https://drive.google.com/file/d/1FmohmS9sjSlitiQzPuboNxT1bLcsdWug/view?usp=sharing" image="/assets/img/mods/terrain.png" width="214" height="132" %}
-                {% include block.html url="https://drive.google.com/file/d/1YwFuI4cHUfxExmfXNt_AOaZXj_YkLIOH/view?usp=drive_link" image="/assets/img/mods/sound.png" width="214" height="132" %}
-                {% include block.html url="https://drive.google.com/file/d/1ykgwdBP5qPjPjGtx9vKHQ2P469DhY3Vo/view?usp=drive_link" image="/assets/img/mods/effects.png" width="214" height="132" %}
-            </div>
-        </div>
-        <div class="wide-content">
-            <div class="b4r r-img-text">
-                {% include block.html url="https://docviewer.yandex.ru/view/1859932657/?*=E8hYUovkZa8fxmuYoQXsArxh7zR7InVybCI6InlhLWRpc2stcHVibGljOi8vb09HNXZteE9TMFZRbzZoK09Ddm9JRCthUE45MVpYcDRibWdhRTJ0YjBCNjRkQ1VCYzk2a0NNZk1pdi9ob2s3THEvSjZicG1SeU9Kb25UM1ZvWG5EYWc9PTovQm9CX1JvZmxfYnlfVkxCUlROLndvdG1vZCIsInRpdGxlIjoiQm9CX1JvZmxfYnlfVkxCUlROLndvdG1vZCIsIm5vaWZyYW1lIjpmYWxzZSwidWlkIjoiMTg1OTkzMjY1NyIsInRzIjoxNjkyODc0NTk3NTUzLCJ5dSI6IjQ4ODAxODE2MTY4NzAwMjM1NSJ9" image="/assets/img/mods/bb_lol.png" width="214" height="132" %}
-                {% include block.html url="/mods/ugv" image="/assets/img/mods/ugv.png" width="214" height="132" %}
-                {% include block.html url="https://docviewer.yandex.ru/view/1859932657/?*=1f%2FDYkOQ7TCc1v2VuhuPC0JonLF7InVybCI6InlhLWRpc2stcHVibGljOi8vb09HNXZteE9TMFZRbzZoK09Ddm9JRCthUE45MVpYcDRibWdhRTJ0YjBCNjRkQ1VCYzk2a0NNZk1pdi9ob2s3THEvSjZicG1SeU9Kb25UM1ZvWG5EYWc9PTovS29yYmVuSGVsaXVtVk8uemlwIiwidGl0bGUiOiJLb3JiZW5IZWxpdW1WTy56aXAiLCJub2lmcmFtZSI6ZmFsc2UsInVpZCI6IjE4NTk5MzI2NTciLCJ0cyI6MTY5Mjg3NDU3MTA4NCwieXUiOiI0ODgwMTgxNjE2ODcwMDIzNTUifQ%3D%3D" image="/assets/img/mods/korben.png" width="214" height="132" %}
-            </div>
-        </div>
-        <div class="wide-content">
-            <div class="b4r r-img-text">
-                {% include block.html text="АРХИВ ОБНОВЛЕНИЙ" url="/updates" image="/assets/img/mods/notes.png" width="214" height="132" %}
-                {% include block.html text="В РАЗРАБОТКЕ" url="/development" image="/assets/img/mods/indev.jpg" width="214" height="132" %}
+        <div class="tankopedia_content">
+            <div class="tankopedia_item tankopedia_item__opened js-tankopedia-item"
+                data-opened-class="tankopedia_item__opened">
+                <div class="tankopedia_title">
+                    <span class="tankopedia_type tankopedia_type__heavytank" style="
+    background-image: url(./img/maps.png);
+    background-size: 24px;
+    background-position: center;
+">heavytank</span>
+                    <h3 class="tankopedia_heading">Рестайлинги</h3>
+                </div>
+                <div class="tankopedia_vehicles">
+                    <p>Универсальная версия ремоделинга, обычно в таких модификациях изменяются текстуры карт/ангаров.
+                    </p>
+                    <ul class="vehicles-list">
+                        <li class="vehicles-list_item vehicles-list_item">
+                            <a class="vehicles-list_link js-tooltip js-tooltip-id_js-premium_tooltip"
+                                href="https://forblitz.ru/map-restylings/restailing-vechernie-vinogradniki/">
+                                <span class="vehicles-list_picture">
+                                    <img class="vehicles-list_img" src="./img/old_italy.jpg" alt="italy">
+                                </span>
+                                <span class="vehicles-list_text">Вечерние «Виноградники»</span>
+                            </a>
+                        </li>
+                        <li class="vehicles-list_item">
+                            <a class="vehicles-list_link" href="https://iblitzmods.ru/mods/366-old_middelburg.html">
+                                <span class="vehicles-list_picture">
+                                    <img class="vehicles-list_img" src="./img/oldmid.png" alt="Old Mid">
+                                </span>
+                                <span class="vehicles-list_text">Старый «Миддлбург»</span>
+                            </a>
+                        </li>
+                        <li class="vehicles-list_item">
+                            <a class="vehicles-list_link"
+                                href="https://iblitzmods.ru/mods/352-restajling-karty-vechernij-baltijskij-schit.html">
+                                <span class="vehicles-list_picture">
+                                    <img class="vehicles-list_img" src="./img/hallrock.png" alt="Hell Rockfield">
+                                </span>
+                                <span class="vehicles-list_text">Вечерний «Балтийский щит»</span>
+                            </a>
+                        </li>
+                        <li class="vehicles-list_item vehicles-list_item">
+                            <a class="vehicles-list_link js-tooltip js-tooltip-id_js-premium_tooltip"
+                                href="hhttps://forblitz.ru/map-restylings/misticheskii-baltiiskii-shchit/">
+                                <span class="vehicles-list_picture">
+                                    <img class="vehicles-list_img" src="./img/Halloween_Rockfield_2.0.png"
+                                        alt="Halloween_Rockfield_2.0">
+                                </span>
+                                <span class="vehicles-list_text">Мистический «Балтийский щит»</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
     </div>

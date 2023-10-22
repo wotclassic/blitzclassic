@@ -4,7 +4,7 @@
         <a href="{{ '/news' | relative_url }}" class="orange-arrow">Все новости</a>
         <a href="https://wotclassic.github.io/feed.xml" target="_blank" class="b-rss-link"><span class="b-rss-link_text">rss</span></a>
     {% else %}
-        <h1>{{ include.title | upcase | default: НОВОСТИ }}</h1>
+        <h1 class="heading-1">{{ include.title | upcase | default: НОВОСТИ }}</h1>
     {% endif %}
 </div>
 {% assign post_num = 1 %}
