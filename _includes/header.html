@@ -1,0 +1,112 @@
+<div class="brand-header">
+    <div class="brand-header-bg">
+        <div class="brand-header-nav">
+            <a class="mb-logo" href="{{ site.data.socials.bendy.mrbendy.url }}"></a>
+            <a class="brand-link" href="{{ site.data.socials.bendy.discord.url }}">Discord</a>
+            <a class="brand-link" href="http://forum.worldoftanks.ru/index.php?/topic/2134176-«wot-это-классика»-ламповый-world-of-tanks/">Форум</a>
+            <a class="brand-link" href="https://koreanrandom.com/forum/topic/65511-«wot-это-классика»-ламповый-world-of-tanks/">Korean Random</a>
+        </div>
+    </div>
+</div>
+<nav class="navigation-header">
+    <div class="navigation-head-centr">
+        <a href="{{ '/' | relative_url }}" class="nav-logo">World of Tanks Blitz</a>
+        <ul class="menu_list">
+            <li class="menu_item">
+                <a class="menu_link {% if page.url == "/" %}menu_link-active{% endif %}" href="{{ '/' | relative_url }}">Главная</a>
+            </li>
+            <li class="menu_item">
+                <a class="menu_link {% if page.url == "/news.html" %}menu_link-active{% endif %}" href="{{ '/news' | relative_url }}">Новости</a>
+            </li>
+            <li class="menu_item">
+                <a class="menu_link {% if page.url == "/leaderboard.html" %}menu_link-active{% endif %}" href="{{ '/leaderboard' | relative_url }}">Зал славы</a>
+            </li>
+            <li class="menu_item">
+                <a class="menu_link {% if page.url == "/mods.html" %}menu_link-active{% endif %}" href="{{ '/mods' | relative_url }}">Моды</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+<div style="display: none; height: 66px;" id="navbar_blank"></div>
+<script>
+    var brand_offset = document.getElementsByClassName("brand-header")[0].offsetHeight;
+    var navbar = document.getElementById("navbar");
+    var navbar_blank = document.getElementById("navbar_blank");
+    var lastScrollTop = 0;
+    var isHidden = false;
+
+    window.onscroll = function() { navbarStick() };
+
+    function navbarStick() {
+        curScrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+        if (!isHidden && curScrollTop - (navbar.offsetHeight + brand_offset) > 0 && curScrollTop > lastScrollTop) hide();
+        else if (isHidden && curScrollTop < lastScrollTop) unHide();
+        else if (curScrollTop - brand_offset < 0) unstick();
+
+        function hide() {
+            navbar.style.top = "-66px";
+            navbar.style.position = "fixed";
+            navbar.style.width = "100%";
+            navbar.style.zIndex = 2;
+            setTimeout(function() { navbar.style.transition = "top 0.2s ease-out 0s"; }, 0.2);
+            navbar_blank.style.display = "block";
+            isHidden = true;
+        }
+
+        function unHide() {
+            navbar.style.top = 0;
+            isHidden = false;
+        }
+
+        function unstick() {
+            navbar.style.position = "relative";
+            navbar.style.removeProperty("width");
+            setTimeout(function() { navbar.style.removeProperty("transition"); }, 0.2);
+            navbar_blank.style.display = "none";
+            isHidden = false;
+        }
+
+        lastScrollTop = curScrollTop <= 0 ? 0 : curScrollTop;
+    }
+</script>
+<div>
+    <div class="content-wrapper">
+        <style>
+            .b-cluster-lite {
+                background-color: #000;
+                background-position: 100% 0;
+                background-repeat: no-repeat;
+                box-shadow: 0 0 10px rgba(0, 0, 0, .7), 0 0 1px rgba(255, 255, 255, .4) inset;
+                position: absolute;
+                right: 0;
+                top: 75px;
+                width: 510px;
+                z-index: 7;
+            }
+
+            .b-cluster-lite_message {
+                background: url(/assets/img/cluster_message_ico.png) no-repeat 7px 8px;
+                color: #909191;
+                font-size: 11px;
+                padding: 13px 24px 8px 37px;
+            }
+
+            .b-cluster-lite_text {
+                line-height: 17px;
+                margin-bottom: 8px;
+            }
+
+            .b-cluster-lite_name {
+                color: #bdbfbf;
+                font-weight: 700;
+            }
+
+            @media screen and (min-width: 768px) {
+                #mobileNotif {
+                    display: none;
+                }
+            }
+        </style>
+    </div>
+</div>

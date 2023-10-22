@@ -1,0 +1,24 @@
+---
+layout: default
+---
+<div class="container">
+    <div class="r-content">
+            <div class="news-picture" style="background-image: url({{ page.image | relative_url }});"></div>
+        {% assign category_names = category_names | append: "Важные новости|Все новости" %}
+        {% assign category_urls = category_urls | append: "/news/important|/news" %}
+        {% assign category_names = category_names | split: "|" %}
+        {% assign category_urls = category_urls | split: "|" %}
+        {% include important_categories-sidebar.html %}
+    </div>
+    <div class="l-content">
+        <h1 class="heading-1 heading-1__news-page">{{ page.title }}
+            {% assign category = page.categories[0] %}
+            <div class="news-time">{{ page.date | date: "%d.%m.%Y" }} / {{ site.data.categories[category] }}</div>
+        </h1>
+        <div class="news-content">
+            <div class="b-content">
+                {{ content }}
+            </div>
+        </div>
+    </div>
+</div>

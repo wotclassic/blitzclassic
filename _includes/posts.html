@@ -1,0 +1,60 @@
+<div class="news-text">
+    {% if page.url == '/' %}
+        <h2 class="news-head">НОВОСТИ</h2>
+        <a href="{{ '/news' | relative_url }}" class="orange-arrow">Все новости</a>
+        <a href="https://wotclassic.github.io/feed.xml" target="_blank" class="b-rss-link"><span class="b-rss-link_text">rss</span></a>
+    {% else %}
+        <h1>{{ include.title | upcase | default: НОВОСТИ }}</h1>
+    {% endif %}
+</div>
+{% assign post_num = 1 %}
+
+{% if paginator != nil %}
+    {% assign posts = paginator.posts %}
+{% else %}
+    {% assign posts = site.posts %}
+{% endif %}
+{% for post in posts | limit: 10 %}
+    {% if post_num == 6 and paginator == nil %}
+        <div class="wide">
+            <div class="wide-content">
+                <div class="wide-text">
+                    {% include block.html text="ВСТУПАЙ В КЛАН!" url="https://lesta.ru/clans/wot/454959/" image="/assets/img/wide/join-clan.jpg" width="209" height="135" %}
+                </div>
+                <div class="wide-text">
+                    {% include block.html text="ПРОГРАММА КОНТРИБЬЮТЕРСТВА" url="https://tanki.su/ru/news/notifications/contributors-program-open-news/" image="/assets/img/wide/contribute.png" width="209" height="135" %}
+                </div>
+                <div class="wide-text">
+                    {% include block.html text="ТАБЕЛЬ-КАЛЕНДАРЬ" url="https://tanki.su/ru/daily-check-in/" image="/assets/img/wide/calendar.png" width="209" height="135" %}
+                </div>
+            </div>
+        </div>
+    {% endif %}
+    <div class="news">
+        <a href="{{ post.url | relative_url }}" class="news_ico">
+            {% if post.tags contains "important" %}
+                <img class="n-import-icon" src="{{ '/assets/img/important-news-ico.png' | relative_url }}">
+            {% endif %}
+            <img class="n-block-img" src="{{ post.image | default: '/assets/img/announcement_127x.jpg' | relative_url }}">
+        </a>
+    </div>
+    <div class="img-content">
+        <h5 class="img-headlink"><a href="{{ post.url | relative_url }}" class="img-link">{{ post.title }}</a></h5>
+        <p class="n-img-desc">{{ post.excerpt | strip_html }}</p>
+        <p class="n-img-date">
+            {{ post.date | date: "%d.%m.%Y" }}
+            {% assign category = post.categories[0] %}
+            <a href="{{ '/news/' | append: post.categories[0] | relative_url }}" class="imgblock-category">{{ site.data.categories[category] }}</a>
+            <a href="https://kr.cm/f/t/65511/" class="news-comment" style="margin-left: 10px;">Обсудить на форуме</a>
+        </p>
+        
+    </div>
+    <hr class="b-hr">
+    {% assign post_num = post_num | plus: 1 %}
+{% endfor %}
+{% if post_num < 6 and paginator == nil %}
+    {% include suggestion-panel.html %}
+{% endif %}
+{% if page.url == '/' %}
+    <a href="{{ '/news/2' | relative_url }}" class="orange-arrow">Другие новости</a>
+{% endif %}
