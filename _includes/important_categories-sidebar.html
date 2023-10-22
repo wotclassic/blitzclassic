@@ -10,7 +10,7 @@
                         <a></a>
                         <div>
                             <a href="{{ post.url | relative_url }}" class="img-imp-link">{{ post.title }}</a>
-                            {% assign category = page.categories[0] %}
+                            {% assign category = post.categories[0] %}
                             <div class="news-imp-time">{{ site.data.categories[category] }}</div>
                         </div>
                     </div>

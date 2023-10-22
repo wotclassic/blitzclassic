@@ -1,7 +1,7 @@
 @font-face {
     font-family: robotocondensedbold;
-    src: url('/assets/font/robotocondensed-bold-webfont.eot');
-    src: url('/assets/font/robotocondensed-bold-webfont.eot') format("embedded-opentype"),url('/assets/font/robotocondensed-bold-webfont.woff') format("woff");
+    src: url($baseurl+'/assets/font/robotocondensed-bold-webfont.eot');
+    src: url($baseurl+'/assets/font/robotocondensed-bold-webfont.eot') format("embedded-opentype"),url($baseurl+'/assets/font/robotocondensed-bold-webfont.woff') format("woff");
     font-weight: 400;
     font-style: normal;
     font-stretch: normal
@@ -9,8 +9,8 @@
 
 @font-face {
     font-family: robotocondensedregular;
-    src: url('/assets/font/robotocondensed-regular-webfont.eot');
-    src: url('/assets/font/robotocondensed-regular-webfont.eot') format("embedded-opentype"),url('/assets/font/robotocondensed-regular-webfont.woff') format("woff");
+    src: url($baseurl+'/assets/font/robotocondensed-regular-webfont.eot');
+    src: url($baseurl+'/assets/font/robotocondensed-regular-webfont.eot') format("embedded-opentype"),url($baseurl+'/assets/font/robotocondensed-regular-webfont.woff') format("woff");
     font-weight: 400;
     font-style: normal;
     font-stretch: normal
@@ -18,8 +18,8 @@
 
 @font-face {
     font-family: robotoregular;
-    src: url('/assets/font/roboto-regular-webfont.eot');
-    src: url('/assets/font/roboto-regular-webfont.eot') format("embedded-opentype"),url('/assets/font/roboto-regular-webfont.woff') format("woff");
+    src: url($baseurl+'/assets/font/roboto-regular-webfont.eot');
+    src: url($baseurl+'/assets/font/roboto-regular-webfont.eot') format("embedded-opentype"),url($baseurl+'/assets/font/roboto-regular-webfont.woff') format("woff");
     font-weight: 400;
     font-style: normal;
     font-stretch: normal
@@ -27,16 +27,16 @@
 
 @font-face {
     font-family: 'WarHeliosCondC';
-    src: url('/assets/font/warhelioscondc-webfont.eot');
-    src: url('/assets/font/warhelioscondc-webfont.eot') format("embedded-opentype"),url('/assets/font/warhelioscondc-webfont.woff') format("woff");
+    src: url($baseurl+'/assets/font/warhelioscondc-webfont.eot');
+    src: url($baseurl+'/assets/font/warhelioscondc-webfont.eot') format("embedded-opentype"),url($baseurl+'/assets/font/warhelioscondc-webfont.woff') format("woff");
     font-weight: normal;
     font-style: normal
 }
 
 @font-face {
     font-family: 'WarHeliosCondCBold';
-    src: url('/assets/font/warhelioscondcbold-webfont.eot');
-    src: url('/assets/font/warhelioscondcbold-webfont.eot') format("embedded-opentype"),url('/assets/font/warhelioscondcbold-webfont.woff') format("woff");
+    src: url($baseurl+'/assets/font/warhelioscondcbold-webfont.eot');
+    src: url($baseurl+'/assets/font/warhelioscondcbold-webfont.eot') format("embedded-opentype"),url($baseurl+'/assets/font/warhelioscondcbold-webfont.woff') format("woff");
     font-weight: normal;
     font-style: normal
 }
@@ -150,7 +150,7 @@ td {
 }
 
 body {
-    background: url('/assets/img/back.jpg') fixed no-repeat 50% 0 #000;
+    background: url($baseurl+'/assets/img/back.jpg') fixed no-repeat 50% 0 #000;
     min-width: 1000px;
     font-size: 15px;
     font-family: Arial,"Helvetica CY",Helvetica,sans-serif;
@@ -170,7 +170,7 @@ body {
 }
 
 .brand-header-bg {
-    background: url(/assets/img/global-nav-bg.png) repeat-x 0 0 #000;
+    background: url($baseurl+'/assets/img/global-nav-bg.png') repeat-x 0 0 #000;
     height: 35px;
 }
 
@@ -210,7 +210,7 @@ body {
 }
 
 .brand-link {
-    background: url(/assets/img/global-nav-separator.jpg) no-repeat 100% 0;
+    background: url($baseurl+'/assets/img/global-nav-separator.jpg') no-repeat 100% 0;
     position: relative;
     margin-left: -1px;
     color: #8b8c8c;
@@ -229,7 +229,7 @@ body {
 }
 
 .navigation-header {
-    background: url(/assets/img/menu-fix.png) repeat-x 0 0;
+    background: url($baseurl+'/assets/img/menu-fix.png') repeat-x 0 0;
     width: 100%;
     z-index: 90;
     top: 35px;
@@ -286,7 +286,7 @@ body {
     margin: 0;
     padding: 0 25px;
     line-height: 60px;
-    background: url(/assets/img/menu-separator.png) no-repeat 0 50%;
+    background: url($baseurl+'/assets/img/menu-separator.png') no-repeat 0 50%;
 }
 
 .menu_item:first-child {
@@ -346,11 +346,11 @@ body {
     top: 10px;
     width: 32px;
     height: 39px;
-    background: url(/assets/img/menu-logo.png) repeat-x 0 0;
+    background: url($baseurl+'/assets/img/menu-logo.png') repeat-x 0 0;
 }
 
 .wotc-logo {
-    background: url('/assets/img/wotc_logo.png');
+    background: url($baseurl+'/assets/img/wotc_logo.png');
     background-size: 100% 100%;
     display: block;
     width: 360px;
@@ -551,7 +551,7 @@ body {
 }
 
 hr {
-    background: url('/assets/img/delimeter.png') no-repeat center top;
+    background: url($baseurl+'/assets/img/delimeter.png') no-repeat center top;
     border: none;
     height: 2px;
     margin: 20px -25px;
@@ -579,7 +579,7 @@ hr {
     left: 1px;
     right: 1px;
     bottom: 1px;
-    background: url('/assets/img/b-b4r-bg.png') no-repeat -1000px -1000px;
+    background: url($baseurl+'/assets/img/b-b4r-bg.png') no-repeat -1000px -1000px;
     display: block;
 }
 
@@ -640,7 +640,7 @@ hr {
     left: 0;
     right: 0;
     padding: 100px 10px 10px 10px;
-    background: url('/assets/img/bg-text-img.png') no-repeat;
+    background: url($baseurl+'/assets/img/bg-text-img.png') no-repeat;
 }
 
 .text-pos-com {
@@ -650,7 +650,7 @@ hr {
     left: 0;
     right: 0;
     padding: 106px 10px 10px 10px;
-    background: url('/assets/img/bg-text-img.png') no-repeat;
+    background: url($baseurl+'/assets/img/bg-text-img.png') no-repeat;
 }
 
 .text-head {
@@ -758,7 +758,7 @@ hr {
 
 .orange-arrow {
         display: inline-block;
-        background: url('/assets/img/orange_arrow.png') 100% 0 no-repeat;
+        background: url($baseurl+'/assets/img/orange_arrow.png') 100% 0 no-repeat;
         line-height: 13px;
         padding-right: 9px;
         bottom: 3px;
@@ -846,7 +846,7 @@ hr {
 }
 
 .medium-button__ios {
-    background-image: url(/assets/img/app-store.svg);
+    background-image: url($baseurl+'/assets/img/app-store.svg');
     background-repeat: no-repeat;
     background-position: 11% 44%;
     background-size: auto 53%;
@@ -924,7 +924,7 @@ p {
 }
 
 .social_link {
-    background-image: url(/assets/img/socials.png);
+    background-image: url($baseurl+'/assets/img/socials.png');
     width: 52px;
     height: 52px;
 }
@@ -933,7 +933,7 @@ p {
     display: block;
     width: 38px;
     height: 38px;
-    background: url(/assets/img/socials-mobile.png) no-repeat -500px 0;
+    background: url($baseurl+'/assets/img/socials-mobile.png') no-repeat -500px 0;
     font: 0/0 a;
     text-shadow: none;
     color: transparent;
@@ -995,7 +995,7 @@ p {
     -ms-flex-negative: 0;
     flex-shrink: 0;
     margin: 0;
-    background: url(/assets/img/footer-logold.png) no-repeat 0 0;
+    background: url($baseurl+'/assets/img/footer-logold.png') no-repeat 0 0;
     -webkit-box-ordinal-group: 3;
     -ms-flex-order: 2;
     order: 2;
@@ -1226,7 +1226,7 @@ $yt-color: #cc181e;
     text-shadow: none;
     color: transparent;
     display: block;
-    background: url('/assets/img/lesta_logo.png');
+    background: url($baseurl+'/assets/img/lesta_logo.png');
     background-size: 100% 100%;
     width: 132px;
     height: 70px;
@@ -1249,7 +1249,7 @@ $yt-color: #cc181e;
 }
 
 .news-category {
-    background: url('/assets/img/bg-context-menu_categories.png') 0 0 repeat-y;
+    background: url($baseurl+'/assets/img/bg-context-menu_categories.png') 0 0 repeat-y;
     border-bottom: 1px solid #000;
     margin-bottom: 23px;
     padding: 0;
@@ -1259,7 +1259,7 @@ $yt-color: #cc181e;
 }
 
 .news-wrapper {
-    background: url('/assets/img/bg-context-menu-top_categories.png') 0 0 no-repeat;
+    background: url($baseurl+'/assets/img/bg-context-menu-top_categories.png') 0 0 no-repeat;
     position: relative;
     padding: 0px 0px 14px 0;
 }
@@ -1267,7 +1267,7 @@ $yt-color: #cc181e;
 .news-arrow {
     height: 24px;
     width: 7px;
-    background: url('/assets/img/bg-arrow_categories.png') 0 0 no-repeat;
+    background: url($baseurl+'/assets/img/bg-arrow_categories.png') 0 0 no-repeat;
     position: absolute;
     left: -7px;
     top: 14px;
@@ -1299,7 +1299,7 @@ $yt-color: #cc181e;
 
 .news-list a:hover {
     text-decoration: underline;
-    background: url('/assets/img/arrow.png') -244px 3px no-repeat;
+    background: url($baseurl+'/assets/img/arrow.png') -244px 3px no-repeat;
     color: #fff
 }
 
@@ -1307,7 +1307,7 @@ $yt-color: #cc181e;
     color: #cacbcc;
     font-weight: bold;
     text-decoration: none;
-    background: url('/assets/img/arrow.png') 0 3px no-repeat;
+    background: url($baseurl+'/assets/img/arrow.png') 0 3px no-repeat;
     padding: 0 0 0 18px;
     display: block;
     word-wrap: break-word;
@@ -1381,30 +1381,30 @@ $yt-color: #cc181e;
 .news-comment {
     display: inline-block;
     padding: 0 0 2px 20px;
-    background: url('/assets/img/comment-ico.png') no-repeat 0 0;
+    background: url($baseurl+'/assets/img/comment-ico.png') no-repeat 0 0;
     color: #cacbcc;
     margin-right: 12px;
 }
 
 .news-comment:hover {
     color: #fff;
-    background: url('/assets/img/comment-ico.png') no-repeat 0 -20px
+    background: url($baseurl+'/assets/img/comment-ico.png') no-repeat 0 -20px
 }
 
 .message-info {
-    background: url('/assets/img/blue_message.png') no-repeat 0 0;
+    background: url($baseurl+'/assets/img/blue_message.png') no-repeat 0 0;
 }
 
 .message-money {
-    background: url('/assets/img/yellow_message.png') no-repeat;
+    background: url($baseurl+'/assets/img/yellow_message.png') no-repeat;
 }
 
 .message-warning {
-    background: url('/assets/img/orange_message.png') no-repeat;
+    background: url($baseurl+'/assets/img/orange_message.png') no-repeat;
 }
 
 .message-error {
-    background: url('/assets/img/red_message.png') no-repeat 0 0;
+    background: url($baseurl+'/assets/img/red_message.png') no-repeat 0 0;
 }
 
 .message-money, .message-warning, .message-info, .message-error {
@@ -1465,7 +1465,7 @@ $yt-color: #cc181e;
 }
 
 .b-content hr {
-    background: url('/assets/img/delimeter.png') no-repeat center top;
+    background: url($baseurl+'/assets/img/delimeter.png') no-repeat center top;
     border: none;
     height: 2px;
     clear: both;
@@ -1480,7 +1480,7 @@ $yt-color: #cc181e;
 
 .b-button {
     display: inline-block;
-    background: url('/assets/img/small-orange-button.png');
+    background: url($baseurl+'/assets/img/small-orange-button.png');
     height: 30px;
     margin-right: 35px;
     position: relative;
@@ -1496,7 +1496,7 @@ $yt-color: #cc181e;
 .b-button_right {
     display: inline-block;
     border: medium none;
-    background: url('/assets/img/small-orange-button.png') no-repeat 100% -60px;
+    background: url($baseurl+'/assets/img/small-orange-button.png') no-repeat 100% -60px;
     color: #fff;
     cursor: pointer;
     font-size: 13px;
@@ -1558,7 +1558,7 @@ $yt-color: #cc181e;
 .b-content ul li {
     margin: 4px 0 5px;
     padding: 0 0 0 12px;
-    background: url('/assets/img/list-style.gif') no-repeat 0 5px;
+    background: url($baseurl+'/assets/img/list-style.gif') no-repeat 0 5px;
 }
 
 .b-hr-layoutfix {
@@ -1572,7 +1572,7 @@ $yt-color: #cc181e;
 
 .b-hr-block {
     display: block;
-    background: url('/assets/img/hr-block.png') no-repeat;
+    background: url($baseurl+'/assets/img/hr-block.png') no-repeat;
     margin: 0 120px 0 0;
     height: 59px;
 }
@@ -1599,7 +1599,7 @@ $yt-color: #cc181e;
 }
 
 .b-junction_pager-ico {
-    background: url('/assets/img/pager_ico.png') 50% 0 no-repeat;
+    background: url($baseurl+'/assets/img/pager_ico.png') 50% 0 no-repeat;
     display: inline-block;
     height: 10px;
     margin-right: -5px;
@@ -1644,7 +1644,7 @@ $yt-color: #cc181e;
 }
 
 .b-junction_pager__disable {
-    background: #1d1d1e url('/assets/img/pager-bg-disable.png') 0 0 repeat-x;
+    background: #1d1d1e url($baseurl+'/assets/img/pager-bg-disable.png') 0 0 repeat-x;
     box-shadow: 0 0 1px rgba(255,255,255,0.35) inset, 0 1px 0 rgba(255,255,255,0.04) inset, 0 0 12px rgba(0,0,0,0.05);
     color: #666768;
     cursor: default;
@@ -1663,7 +1663,7 @@ $yt-color: #cc181e;
 
 .b-hr-block span {
     width: 120px;
-    background: url('/assets/img/hr-block.png') 100% 0;
+    background: url($baseurl+'/assets/img/hr-block.png') 100% 0;
     margin-right: -120px;
     height: 59px;
     float: right;
@@ -1726,7 +1726,7 @@ $yt-color: #cc181e;
 }
 
 .big-orange-button {
-    background: url('/assets/img/big-orange-button.png') no-repeat;
+    background: url($baseurl+'/assets/img/big-orange-button.png') no-repeat;
     border-radius: 3px;
     float: left;
     height: 46px;
@@ -1736,7 +1736,7 @@ $yt-color: #cc181e;
 }
 
 .big-orange-button-right {
-    background: url('/assets/img/big-orange-button.png') no-repeat 100% 0;
+    background: url($baseurl+'/assets/img/big-orange-button.png') no-repeat 100% 0;
     border: medium none;
     color: #fff;
     cursor: pointer;
@@ -1849,7 +1849,7 @@ $yt-color: #cc181e;
     cursor: pointer;
     width: 113px;
     height: 113px;
-    background: url('/assets/img/ico-video.png') no-repeat;
+    background: url($baseurl+'/assets/img/ico-video.png') no-repeat;
     margin: -56.5px 0 0 -56.5px;
     position: absolute;
     top: 50%;
@@ -1932,7 +1932,7 @@ table {
     transition: cubic-bezier(0, 0.42, 0.58, 1) 0.2s;
     transition-property: bottom;
     padding: 10px 12px 12px 12px;
-    background: url('/assets/img/carousel-text-bg.png');
+    background: url($baseurl+'/assets/img/carousel-text-bg.png');
     border-top: 1px #000 solid;
     z-index: 2;
     line-height: 1;
@@ -1962,7 +1962,7 @@ table {
     padding-left: 5px;
     height: 173px;
     width: 26px;
-    background: url('/assets/img/carousel-control.png') no-repeat;
+    background: url($baseurl+'/assets/img/carousel-control.png') no-repeat;
     background-origin: content-box;
     position: absolute;
     top: 0;
@@ -2010,7 +2010,7 @@ table {
     color: transparent;
     width: 10px;
     height: 10px;
-    background: url('/assets/img/carousel-list.png') no-repeat !important;
+    background: url($baseurl+'/assets/img/carousel-list.png') no-repeat !important;
     cursor: pointer;
     margin: 0 3px !important;
     padding: 0 !important;
@@ -2050,7 +2050,7 @@ table {
     padding: 3px 0 0;
     height: 21px;
     width: 50px;
-    background: url('/assets/img/bg-pager-arrow.png') 0 0 no-repeat;
+    background: url($baseurl+'/assets/img/bg-pager-arrow.png') 0 0 no-repeat;
     font-size: 11px;
     color: #606061;
     text-align: center;
@@ -2095,14 +2095,14 @@ table {
     float: left;
     border: 1px #090a0b solid;
     box-shadow: 0 0 2px #5d5d61 inset;
-    background: url('/assets/img/pager-bg.gif') repeat-x 0 100% #1d1d1e;
+    background: url($baseurl+'/assets/img/pager-bg.gif') repeat-x 0 100% #1d1d1e;
     color: #f25322;
     margin: 0 1px;
 }
 
 .b-pager_link:hover {
     color: #ff7432;
-    background: url('/assets/img/pager-bg-hover.gif') repeat-x 0 100% #292929;
+    background: url($baseurl+'/assets/img/pager-bg-hover.gif') repeat-x 0 100% #292929;
     box-shadow: 0 0 2px #86868b inset;
     text-decoration: none
 }
@@ -2327,7 +2327,7 @@ table {
 }
 
 .orange-arrow-big {
-    background: url(/assets/img/orange_arrow_big.png) 100% 0 no-repeat;
+    background: url($baseurl+'/assets/img/orange_arrow_big.png') 100% 0 no-repeat;
     font-size: 14px;
     line-height: 16px;
     padding-right: 11px;
@@ -2338,7 +2338,7 @@ table {
 }
 
 .b-rss-link {
-    background: url(/assets/img/rss.png) no-repeat 100% 0;
+    background: url($baseurl+'/assets/img/rss.png') no-repeat 100% 0;
     color: #f25322;
     float: right;
     font-family: Arial,"Helvetica CY",Helvetica,sans-serif;
