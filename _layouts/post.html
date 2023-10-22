@@ -3,7 +3,7 @@ layout: default
 ---
 <div class="container">
     <div class="r-content">
-            <div class="news-picture" style="background-image: url({{ page.image | relative_url }});"></div>
+            <div class="news-picture" style="background-image: url({{ page.image | default: '/assets/img/announcement.png' | relative_url }});"></div>
         {% assign category_names = category_names | append: "Важные новости|Все новости" %}
         {% assign category_urls = category_urls | append: "/news/important|/news" %}
         {% assign category_names = category_names | split: "|" %}
