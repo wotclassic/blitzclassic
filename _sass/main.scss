@@ -78,7 +78,9 @@ ul {
 h1,
 .b-header-h1 {
     font-family: "WarHeliosCondC", "Arial Narrow", Arial, sans-serif;
-    font-size: 32px;
+    margin: 31px 0 31px;
+    font-size: 30px;
+    line-height: 30px;
     color: #fff;
     font-weight: normal;
     font-style: normal;
@@ -474,8 +476,8 @@ body {
 }
 
 .news-imp {
-    overflow: hidden;
-    height: 54px;
+    display: block;
+    margin-bottom: 15px;
 }
 
 .b4r img {
@@ -1591,9 +1593,9 @@ $yt-color: #cc181e;
 }
 
 .b-content ul li {
-    margin: 4px 0 5px;
-    padding: 0 0 0 12px;
-    background: url($baseurl+'/assets/img/list-style.gif') no-repeat 0 5px;
+    margin-bottom: 8px;
+    padding-left: 22px;
+    background: url($baseurl+'/assets/img/ico-list.png') 7px 8px no-repeat;
 }
 
 .b-hr-layoutfix {
@@ -2197,12 +2199,11 @@ table {
 }
 
 .news-content blockquote {
-    padding: 13px 18px 13px 23px;
-    margin-bottom: 10px;
-    border-left: #c91f00 5px solid;
-    font-size: 13px;
-    background: #202020;
-    color: #c0c0c0;
+    font-size: 16px;
+    margin: 21px 0 23px;
+    color: #fff;
+    padding-left: 15px;
+    border-left: 2px solid #f49511;
 }
 
 .new-mod {
@@ -2539,6 +2540,162 @@ table {
 .tankopedia_vehicles {
     display: block;
     margin-top: 15px;
+}
+
+.game-info {
+    padding-top: 300px;
+    text-align: center;
+    padding-bottom: 45px;
+}
+
+.container-main {
+    position: relative;
+    max-width: 1370px;
+    padding: 0;
+    margin: 0 auto;
+    height: 100%;
+}
+
+.heading-main {
+    color: #fff;
+    text-transform: uppercase;
+    font-family: "WarHeliosCondCBold","Arial Narrow",arial,sans-serif;
+    font-size: 5vw;
+    text-shadow: 0 0 55px rgba(0,0,0,0.95);
+    margin-bottom: 20px;
+    line-height: 1;
+}
+
+.game-info_text {
+    font-size: 2.2vw;
+    font-family: "WarHeliosCondC","Arial Narrow",Arial,sans-serif;
+    color: #dedede;
+    margin-bottom: 40px;
+    text-shadow: 0 0 15px #000;
+    line-height: 1.2;
+}
+
+.big-button {
+    -webkit-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+    display: inline-block;
+    font-family: "WarHeliosCondC","Arial Narrow",Arial,sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    color: #000;
+    border-top: 1px solid #fbbf25;
+    background-color: #f49511;
+    border-radius: 2px;
+    cursor: pointer;
+    white-space: nowrap;
+    min-width: 120px;
+    font-size: 16px;
+    margin: 0;
+    height: 40px;
+    line-height: 41px;
+    padding: 0 14px;
+}
+
+.big-button:hover {
+    background-color: #ffbf00;
+    color: #000;
+    text-decoration: none;
+}
+
+.big-button_text {
+    font-size: 15px;
+    display: inline-block;
+    font: 11px/11px Arial,"Helvetica CY",Helvetica,sans-serif;
+    line-height: normal;
+    vertical-align: middle;
+}
+
+.big-button_store-name {
+    display: block;
+    font: 22px/22px "WarHeliosCondCBold","Arial Narrow",arial,sans-serif;
+    font-size: 32px;
+    line-height: 30px;
+    margin-bottom: 6px;
+}
+
+.big-button__android {
+    background-image: url(../img/forblitz.png);
+    background-repeat: no-repeat;
+    background-position: 10% 50%;
+    background-size: auto 60%;
+    position: relative;
+    z-index: 1;
+}
+
+.big-button__ios, .big-button__android {
+    font-size: 15px;
+    letter-spacing: normal;
+    word-spacing: normal;
+    height: 74px;
+    line-height: 74px;
+    margin: 0 13px;
+    min-width: 158px;
+    text-align: left;
+    text-transform: none;
+    padding: 0 10px 0 52px;
+    padding-left: 72px;
+}
+
+.logo {
+    width: 250px;
+    height: 207px;
+    padding-top: 58px;
+    margin: 0;
+    position: relative;
+}
+
+.menu {
+    height: 60px;
+    position: absolute;
+    right: 0;
+    top: 36px;
+    width: 100%;
+    z-index: 11;
+    text-align: right;
+    top: 117px;
+}
+
+.menu_wrap {
+    position: relative;
+    max-width: 1370px;
+    margin: 0 auto;
+    z-index: 1;
+}
+
+.menu_item__current .menu_link_main:hover {
+    color: #fff;
+}
+
+.menu_link_main:hover {
+    color: #fff;
+}
+
+.menu_item__current .menu_link_main {
+    color: #fff;
+    border-bottom: 1px solid #f49511;
+}
+
+.menu_link_main:hover {
+    text-decoration: none;
+}
+
+.menu_link_main {
+    text-align: center;
+    display: inline-block;
+    position: relative;
+    display: block;
+    line-height: 1.2;
+    padding: 0;
+    font-family: "WarHeliosCondC","Arial Narrow",Arial,sans-serif;
+    font-size: 25px;
+    padding-top: 15px;
+    text-transform: uppercase;
+    color: #b1b2b2;
 }
 
 @import 'indev.scss';

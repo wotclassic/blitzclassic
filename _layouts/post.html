@@ -11,7 +11,7 @@ layout: default
         {% include important_categories-sidebar.html %}
     </div>
     <div class="l-content">
-        <h1 class="heading-1 heading-1__news-page">{{ page.title }}
+        <h1 class="heading-1 heading-1__news-page" style="margin: 0px 0 30px;">{{ page.title }}
             {% assign category = page.categories[0] %}
             <div class="news-time">{{ page.date | date: "%d.%m.%Y" }} / {{ site.data.categories[category] }}</div>
         </h1>
