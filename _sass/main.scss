@@ -2698,5 +2698,103 @@ table {
     color: #b1b2b2;
 }
 
+
+
+.slide {
+    width: 225%;
+    position: absolute;
+    border-bottom: none;
+    margin: 0;
+    height: 144%;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.slide__main {
+    background: url($baseurl+'/assets/img/index/main-slide.jpg') no-repeat;
+}
+
+.slide__info {
+    background-image: url(../img/index/info-slide-1450-rus.jpg);
+    background-size: cover;
+    padding: 0;
+    top: 100%;
+    background-position: 50% 50%;
+}
+
+.advantages {
+    background-color: rgba(0,0,0,0.8);
+    box-shadow: 0 0 20px 0 rgba(0,0,0,0.7);
+    position: absolute;
+    filter: alpha(opacity=0);
+    top: 26%;
+}
+
+.advantages:first-child {
+    margin-top: 0;
+}
+
+.advantages_heading {
+    border: 2px solid #f49511;
+    overflow: hidden;
+    padding-right: 10px;
+    cursor: pointer;
+    padding-left: 58px;
+    position: relative;
+}
+
+.advantages_heading:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 46px;
+    height: 46px;
+    background: #f49511 url(../img/index/controls1.png) no-repeat -8px -108px;
+    background-position: -2px -2px;
+}
+
+.heading-2__advantages {
+    font-size: 30px;
+    line-height: 46px;
+    float: left;
+    margin: 0;
+    font-family: "WarHeliosCondC","Arial Narrow",Arial,sans-serif;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.advantages_text {
+    border: 1px solid #2b2b2b;
+    padding: 13px 20px 15px;
+    margin: 0;
+}
+
+.advantages_dropdown {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 57px;
+    width: 560px;
+    z-index: 1;
+    background-color: rgba(0,0,0,0.8);
+    min-width: 300px;
+}
+
+.advantages__second {
+    margin-left: 75px;
+    top: 52%;
+}
+
+.advantages__third {
+    margin-right: 0;
+    top: 26%;
+}
+
+.advantages__fourth {
+    margin-right: 75px;
+    top: 65%;
+}
+
 @import 'indev.scss';
 @import 'fan-page.scss';
