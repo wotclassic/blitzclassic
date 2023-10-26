@@ -2619,7 +2619,7 @@ table {
 }
 
 .big-button__android {
-    background-image: url(../img/forblitz.png);
+    background-image: url($baseurl+'/assets/img/forblitz.png');
     background-repeat: no-repeat;
     background-position: 10% 50%;
     background-size: auto 60%;
@@ -2698,24 +2698,37 @@ table {
     color: #b1b2b2;
 }
 
-
+.page {
+    position: relative;
+    height: 100%;
+}
 
 .slide {
+    width: 100%;
+    margin: 0;
+    height: 100%;
+    overflow: hidden;
+}
+
+.slide-info {
     width: 225%;
     position: absolute;
     border-bottom: none;
     margin: 0;
-    height: 144%;
+    height: 100%;
     overflow: hidden;
     z-index: -1;
 }
 
 .slide__main {
-    background: url($baseurl+'/assets/img/index/main-slide.jpg') no-repeat;
+    background: url($baseurl+'/assets/img/index/main-slide.jpg') no-repeat #000;
+    background-position: 50% 50%;
+    border-bottom: none;
+    position: static;
 }
 
 .slide__info {
-    background-image: url(../img/index/info-slide-1450-rus.jpg);
+    background-image: url($baseurl+'/assets/img/index/info-slide-1450-rus.jpg');
     background-size: cover;
     padding: 0;
     top: 100%;
@@ -2750,7 +2763,7 @@ table {
     top: 0;
     width: 46px;
     height: 46px;
-    background: #f49511 url(../img/index/controls1.png) no-repeat -8px -108px;
+    background: #f49511 url($baseurl+'/assets/img/index/controls1.png') no-repeat -8px -108px;
     background-position: -2px -2px;
 }
 
@@ -2794,6 +2807,127 @@ table {
 .advantages__fourth {
     margin-right: 75px;
     top: 65%;
+}
+
+.main-slider {
+    height: 100%;
+    left: 0;
+    width: 100%;
+    padding-bottom: 722px;
+    background-size: cover;
+    overflow: hidden;
+    background-color: #000;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+}
+
+.preview-slider {
+    display: block;
+    height: 152px;
+    transition-delay: 0.3s;
+    left: 0;
+    bottom: 91px;
+    width: 100%;
+    overflow: hidden;
+    background-color: #000;
+}
+
+.slide__download {
+    padding: 0;
+    top: 100%;
+    background: #000 url($baseurl+'/assets/img/index/download-slide-1450-rus.jpg') no-repeat 50% 0;
+    background-position: 50% 50%;
+    background-size: cover;
+}
+
+.offer-wrap {
+    background-repeat: no-repeat;
+    will-change: transform;
+    transition: transform 0.5s linear;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    text-align: left;
+}
+
+.preview-slider_content {
+    width: 10000px;
+    position: relative;
+}
+
+.preview-slider_item {
+    filter: alpha(opacity=50);
+    opacity: 0.5;
+    width: 270px;
+    height: 152px;
+    float: left;
+    position: relative;
+    cursor: pointer;
+}
+
+.main-slider_item {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    left: 100%;
+    top: 0;
+}
+
+.offer {
+    position: absolute;
+    top: 146px;
+    bottom: 0;
+    left: 0;
+    width: 48%;
+    right: auto;
+    margin: auto 0;
+    height: 628px;
+}
+
+.offer_info {
+    margin: 0 0 30px;
+    max-width: none;
+    margin-bottom: 44px;
+}
+
+.heading-1__offer {
+    font-size: 50px;
+}
+
+.offer_text {
+    font-size: 23px;
+    width: 480px;
+    line-height: 30px;
+    font-family: "WarHeliosCondC","Arial Narrow",Arial,sans-serif;
+    font-weight: normal;
+}
+
+.buttons-wrapper__offer {
+    margin-bottom: 60px;
+    margin-left: -11px;
+    padding: 0;
+    font-size: 0;
+    line-height: 0;
+    letter-spacing: -0.31em;
+    word-spacing: -0.43em;
+}
+
+.preview-slider_conrol {
+    font: 0/0 a;
+    text-shadow: none;
+    color: transparent;
+    position: absolute;
+    left: auto;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 59px;
+    background-color: rgba(0,0,0,0.7);
+    background-repeat: no-repeat;
+    background-image: url($baseurl+'/assets/img/index/controls3.png');
+    background-position: center -152px;
+    cursor: pointer;
+    z-index: 50;
 }
 
 @import 'indev.scss';
