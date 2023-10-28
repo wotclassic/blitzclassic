@@ -1,3 +1,9 @@
+<style>
+    .container {
+        max-width: 1265px;
+    }
+</style>
+
 <div class="news-text">
     {% if page.url == '/' %}
         <h2 class="news-head">НОВОСТИ</h2>
@@ -31,25 +37,21 @@
         </div>
     {% endif %}
     <div class="news">
-        <a href="{{ post.url | relative_url }}" class="news_ico">
+        <a href="{{ post.url | relative_url }}">
             {% if post.tags contains "important" %}
                 <img class="n-import-icon" src="{{ '/assets/img/important-news-ico.png' | relative_url }}">
             {% endif %}
             <img class="n-block-img" src="{{ post.image | default: '/assets/img/announcement.png' | relative_url }}">
         </a>
+        <div class="img-content">
+            <h5 class="img-headlink"><a href="{{ post.url | relative_url }}" class="img-link">{{ post.title }}</a></h5>
+                <p class="n-img-date">
+                {{ post.date | date: "%d.%m.%Y" }} /
+                {% assign category = post.categories[0] %}
+                {{ site.data.categories[category] }}
+            </p>
+        </div>
     </div>
-    <div class="img-content">
-        <h5 class="img-headlink"><a href="{{ post.url | relative_url }}" class="img-link">{{ post.title }}</a></h5>
-        <p class="n-img-desc">{{ post.excerpt | strip_html }}</p>
-        <p class="n-img-date">
-            {{ post.date | date: "%d.%m.%Y" }}
-            {% assign category = post.categories[0] %}
-            <a href="{{ '/news/' | append: post.categories[0] | relative_url }}" class="imgblock-category">{{ site.data.categories[category] }}</a>
-            <a href="https://kr.cm/f/t/65511/" class="news-comment" style="margin-left: 10px;">Обсудить на форуме</a>
-        </p>
-        
-    </div>
-    <hr class="b-hr">
     {% assign post_num = post_num | plus: 1 %}
 {% endfor %}
 {% if post_num < 6 and paginator == nil %}

@@ -1,22 +1,24 @@
-<div class="news-category">
-    <div class="news-wrapper">
-        <div class="news-arrow"></div>
-        {% if include.url %}
-            <a href="{{ include.url | relative_url }}">
-        {% endif %}
-        <h2 class="header-block header-block-indent">{{ include.name | default: "КАТЕГОРИИ" }}</h2>
-        {% if include.url %}
-            </a>
-        {% endif %}
-        {% assign length = include.category_names | size | minus: 1 %}
-        {% for i in (0..length) %}
-            <ul class="news-list {% if include.category_urls[i] == page.url %}active{% endif %}">
-                <li>
-                    <a href="{{ include.category_urls[i] | relative_url }}">
-                        <span>{{ include.category_names[i] }}</span>
+<div class="news-list-wrap">
+    <div class="filter">
+        <div class="news-category">
+            <div>
+                {% if include.url %}
+                    <a href="{{ include.url | relative_url }}">
+                {% endif %}
+                {% if include.url %}
                     </a>
-                </li>
-            </ul>
-        {% endfor %}
+                {% endif %}
+                {% assign length = include.category_names | size | minus: 1 %}
+                {% for i in (0..length) %}
+                    <ul class="news-list {% if include.category_urls[i] == page.url %}active{% endif %}">
+                        <li>
+                            <a href="{{ include.category_urls[i] | relative_url }}" class="news-link">
+                                <span>{{ include.category_names[i] }}</span>
+                            </a>
+                        </li>
+                    </ul>
+                {% endfor %}
+            </div>
+        </div>
     </div>
 </div>
