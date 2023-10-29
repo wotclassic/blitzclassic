@@ -1,8 +1,9 @@
 ---
-title: 'Сентябрьское обновление модов: смотрим вместе с Pbody -iwnl-'
-date: 2023-09-30 18:35:15 +0300
+title: '«Жуткий месяц»: октябрьское обновление модов'
+date: 2021-10-31 18:35:15 +0300
 category: announcements
-image: "/assets/img/news/thumbnail/video_icon_new_127x.jpg"
+tags: [important]
+image: "/assets/img/news/thumbnail/hallrock_800x391.png"
 ---
 <p style="display: none">Смотрим на обновление вместе с разработчиками и стримером Pbody -iwnl-!</p>
 

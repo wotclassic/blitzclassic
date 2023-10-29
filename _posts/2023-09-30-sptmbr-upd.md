@@ -1,10 +1,7 @@
 ---
-title: Сентябрьское обновление модов
-date: 2023-09-30 18:34:15 +0300
-tags: [important]
+title: 'Июньское обновление портала: исправление багов и нововведения'
+date: 2021-06-29 18:34:15 +0300
 category: updates
-image: "/assets/img/news/thumbnail/sptmbr_upd_127x.png"
-image_small: "/assets/img/news/image_small/sptmbr_upd.png"
 ---
 <p style="display: none">Опять сентябрьские вечера, учеба, работа... Но выходит сентябрьское обновление с огромной кучей изменений которые украсят ваши вечерние игры в "танки"!</p>
 

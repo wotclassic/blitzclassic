@@ -25,45 +25,46 @@
 {% else %}
     {% assign posts = site.posts %}
 {% endif %}
+<ul class="nnews-list">
+{% assign colheight = "0 0 0" | split: " " %}
+{% assign curline = 0 %}
+{% assign colheight0 = colheight[0] %}
+{% assign colheight1 = colheight[1] %}
+{% assign colheight2 = colheight[2] %}
+{% assign maxheight = 0 %}
+{% assign extrafix = 0 %}
 {% for post in posts | limit: 22 %}
-    {% if post_num == 6 and paginator == nil %}
-        <div class="wide">
-            <div class="wide-content">
-                <div class="wide-text">
-                    {% include block.html text="ВСТУПАЙ В КЛАН!" url="https://lesta.ru/clans/wot/454959/" image="/assets/img/wide/join-clan.jpg" width="209" height="135" %}
-                </div>
-                <div class="wide-text">
-                    {% include block.html text="ПРОГРАММА КОНТРИБЬЮТЕРСТВА" url="https://tanki.su/ru/news/notifications/contributors-program-open-news/" image="/assets/img/wide/contribute.png" width="209" height="135" %}
-                </div>
-                <div class="wide-text">
-                    {% include block.html text="ТАБЕЛЬ-КАЛЕНДАРЬ" url="https://tanki.su/ru/daily-check-in/" image="/assets/img/wide/calendar.png" width="209" height="135" %}
-                </div>
+    {% assign curcol = post_num | minus: 1 | modulo: 3 %}
+    <li class="news {% if post.tags contains 'important' %} news-big {% endif %}" style="transform: translate3d(0px, {{ maxheight | minus: colheight[curcol] | plus: extrafix | times: -185 }}px, 0px);">
+        <a href="{{ post.url | relative_url }}" class="news-lisst">
+            <span class="n-block-img {% if post.tags contains 'important' %} news-big-img {% endif %}" style="background-image: url({{ post.image | default: '/assets/img/announcement.png' | relative_url }})"></span>
+            <div class="img-content {% if post.tags contains 'important' %} img-content-big {% endif %}">
+                <h5 class="img-headlink img-link {% if post.tags contains 'important' %} img-text-big {% endif %}">{{ post.title }}</h5>
+                <p class="n-img-date" style="margin: 0px;">
+                    {{ post.date | date: "%d.%m.%Y" }} /
+                    {% assign category = post.categories[0] %}
+                    {{ site.data.categories[category] }}
+                </p>
             </div>
-        </div>
-    {% endif %}
-    <div class="news">
-        <a href="{{ post.url | relative_url }}">
-            {% if post.tags contains "important" %}
-                <img class="n-import-icon" src="{{ '/assets/img/important-news-ico.png' | relative_url }}">
-            {% endif %}
-            <img class="n-block-img" src="{{ post.image | default: '/assets/img/announcement.png' | relative_url }}">
         </a>
-        <div class="img-content">
-            <h5 class="img-headlink"><a href="{{ post.url | relative_url }}" class="img-link">{{ post.title }}</a></h5>
-                <p class="n-img-date">
-                {{ post.date | date: "%d.%m.%Y" }} /
-                {% assign category = post.categories[0] %}
-                {{ site.data.categories[category] }}
-            </p>
-        </div>
-    </div>
+    </li>
     {% assign post_num = post_num | plus: 1 %}
+    {% if curcol == 0 %}
+    {% if post.tags contains 'important' %}{% assign colheight0 = colheight0 | plus: 2 %}{% else %}{% assign colheight0 = colheight0 | plus: 1 %}{% endif %}
+    {% elsif curcol == 1 %}
+    {% if post.tags contains 'important' %}{% assign colheight1 = colheight1 | plus: 2 %}{% else %}{% assign colheight1 = colheight1 | plus: 1 %}{% endif %}
+    {% elsif curcol == 2 %}
+        {% if post.tags contains 'important' %}{% assign colheight2 = colheight2 | plus: 2 %}{% else %}{% assign colheight2 = colheight2 | plus: 1 %}{% endif %}
+        {% assign curline = curline | plus: 1 %}
+        {% assign maxheight = colheight0 | at_least: colheight1 | at_least: colheight2 %}
+    {% endif %}
+    
+    {% assign colheight = colheight0 | append: " " | append: colheight1 | append: " " | append: colheight2 | split: " " %}
 {% endfor %}
+</ul>
 {% if post_num < 6 and paginator == nil %}
     {% include suggestion-panel.html %}
 {% endif %}
 {% if page.url == '/' %}
     <a href="{{ '/news/2' | relative_url }}" class="orange-arrow">Другие новости</a>
 {% endif %}
-
-/* Количество новостей: 22*/

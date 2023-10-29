@@ -18,7 +18,7 @@ layout: default
                 {% assign category_name = category[0] %}
                 {% assign category_name = site.data.categories[category_name] %}
                 {% assign category_names = category_names | append: category_name | append: "|" %}
-                {% assign category_url = "/news/" | append: category[0] %}
+                {% assign category_url = "/news/" | append: category[0] | append: "/index.html" %}
                 {% assign category_urls = category_urls | append: category_url | append: "|" %}
             {% endfor %}
             {% assign category_names = category_names | split: "|" %}

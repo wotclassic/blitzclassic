@@ -12,7 +12,7 @@
                 {% for i in (0..length) %}
                     <ul class="news-list {% if include.category_urls[i] == page.url %}active{% endif %}">
                         <li>
-                            <a href="{{ include.category_urls[i] | relative_url }}" class="news-link">
+                            <a href="{{ include.category_urls[i] | relative_url }}" class="news-link {% if include.category_urls[i] == page.url %}active{% endif %}">
                                 <span>{{ include.category_names[i] }}</span>
                             </a>
                         </li>

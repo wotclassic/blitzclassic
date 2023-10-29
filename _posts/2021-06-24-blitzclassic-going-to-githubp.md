@@ -1,7 +1,6 @@
 ---
 title: Переезд на GitHub Pages
 date: 2021-06-24 10:44:00 +0300
-tags: [important]
 category: updates
 image: "/assets/img/news/thumbnail/wotb_c_github_800x391.png"
 ---

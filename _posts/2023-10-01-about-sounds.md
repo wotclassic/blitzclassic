@@ -1,7 +1,6 @@
 ---
-title: 'О передаче старых звуков: письмо от VLBRTN'
-date: 2023-10-01 20:28:15 +0300
-image: "/assets/img/news/thumbnail/update_127x.jpg"
+title: 'Заморзка Blitz Classic'
+date: 2022-06-03 20:28:15 +0300
 category: events
 ---
 <p style="display: none">Прощаемся с создателем старых звуков всего и встречаем нового.</p>

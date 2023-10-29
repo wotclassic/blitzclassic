@@ -16,9 +16,9 @@ layout: default
             <br>
             <span class="t-app-general_platform" style="padding-left: 0px;">
                 {% case data.button1 %}
-                    {% when 'steam' %}
+                    {% when 'pc' %}
                     <a class="medium-button medium-button__android" style="margin: 0 8px 16px 0px;" href="{{ data.link1 }}">
-                        <span class="medium-button_text">Загрузите в<span class="medium-button_store-name">Steam</span>
+                        <span class="medium-button_text">Загрузите на<span class="medium-button_store-name">Windows</span>
                         </span>
                     </a>                    
                     {% endcase %}
@@ -34,15 +34,6 @@ layout: default
                     {% endcase %}
                 </span>
             </span>
-            <span class="t-app-general_platform" style="padding-left: 0px;">
-                {% case data.button3 %}
-                    {% when 'lgc' %}
-                    <a class="medium-button medium-button__android" style="margin: 0 8px 16px 0px;" href="{{ data.link3 }}">
-                        <span class="medium-button_text">Загрузите в<span class="medium-button_store-name">LGC</span>
-                        </span>
-                    </a>                    
-                    {% endcase %}
-                </span>
             </span>
         </div>
         <div class="b-app-general">
@@ -52,16 +43,20 @@ layout: default
                         {% case data.platform %}
                             {% when 'windows' %}
                                 <img src="{{ '/assets/img/bwin.png' | relative_url }}" alt="Windows PC">
-                            {% when 'web' %}
-                                <img src="/assets/img/www-icon.png" alt="Web">
+                        {% endcase %}
+                    </span>
+                    <span class="t-app-general_platform">
+                        {% case data.platform1 %}
+                            {% when 'android' %}
+                                <img style="height: 39px; width: 41px; margin-left: -26px; margin-bottom: -5px;" src="{{ '/assets/img/android.png' | relative_url }}" alt="Windows PC">
                         {% endcase %}
                     </span>
                     <span class="t-app-general_platform" style="padding-left: 10px;">
                         {% case data.mod %}
                             {% when 'hangar' %}
                             <img class="tank-info_type tank-info_type__heavytank" src="{{ '/assets/img/mods/category/hangar.png' | relative_url }}" alt="hangar" style="margin-top: -22px;">
-                            {% when 'web' %}
-                            <img src="/assets/img/www-icon.png" alt="Web">
+                            {% when 'map' %}
+                            <img class="tank-info_type tank-info_type__heavytank" src="{{ '/assets/img/mods/category/maps.png' | relative_url }}" alt="maps" style="margin-top: -22px;">
                             {% endcase %}
                         </span>
                     </span>

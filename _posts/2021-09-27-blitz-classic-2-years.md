@@ -2,6 +2,7 @@
 title: Два года Blitz Classic!
 date: 2021-09-27 00:27:00 +0300
 category: announcements
+tags: [important]
 image: "/assets/img/news/thumbnail/birthday_2_800x391.png"
 ---
 
