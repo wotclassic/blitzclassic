@@ -2,6 +2,11 @@
     .container {
         max-width: 1265px;
     }
+    ul li {
+        margin-bottom: 0px;
+        padding-left: 0px;
+        background: none;
+    }
 </style>
 
 <div class="news-text">
@@ -20,7 +25,7 @@
 {% else %}
     {% assign posts = site.posts %}
 {% endif %}
-{% for post in posts | limit: 10 %}
+{% for post in posts | limit: 22 %}
     {% if post_num == 6 and paginator == nil %}
         <div class="wide">
             <div class="wide-content">
@@ -60,3 +65,5 @@
 {% if page.url == '/' %}
     <a href="{{ '/news/2' | relative_url }}" class="orange-arrow">Другие новости</a>
 {% endif %}
+
+/* Количество новостей: 22*/

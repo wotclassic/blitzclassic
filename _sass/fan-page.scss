@@ -93,8 +93,48 @@
 }
 
 .b-software-list_img {
-    width: 180px;
-    height: 180px;
+    max-width: 100%;
+    margin: 0 auto;
+    float: left;
+    width: 50%;
+    padding-left: 37px;
+    padding-right: 34px;
+    padding-top: 0;
+    margin-bottom: 55px;
+    -webkit-box-sizing: border-box;
+}
+
+ul li {
+    margin-bottom: 8px;
+    padding-left: 22px;
+    background: url($baseurl+'/assets/img/ico-list.png') 7px 4px no-repeat;
+}
+
+.tank-info {
+    position: relative;
+    left: 0;
+    top: 0;
+    width: auto;
+    display: block;
+    text-align: left;
+}
+
+.promo-tank_column {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    position: relative;
+    width: 100%;
+    margin-bottom: 55px;
+    width: 50%;
+    padding-top: 10px;
+}
+
+.promo-tank_column__second {
+    padding-top: 0px;
+    padding-right: 0;
+    margin-top: -22px;
+    float: right;
 }
 
 .b-platform-icons:after, .b-app-general:after {
@@ -134,9 +174,25 @@
     line-height: 26px;
 }
 
+.tank-info_type {
+    height: 36px;
+    width: 40px;
+    background-size: 40px;
+    background-position: center;
+    display: inline-block;
+    vertical-align: middle;
+    background-repeat: no-repeat;
+    font: 0/0 a;
+    text-shadow: none;
+    color: transparent;
+}
+
 .t-app-general_platform {
     display: inline-block;
     white-space: nowrap;
+    padding-left: 37px;
+    margin-top: -6px;
+    padding-bottom: 13px;
 }
 
 .t-app-general_cell img {
@@ -179,7 +235,7 @@
 }
 
 .b-tabs-list_item.js-tabs__active {
-    background: url(/assets/img/tab.png) no-repeat 0 0;
+    background: url($baseurl+'/assets/img/tab.png') no-repeat 0 0;
     height: 37px;
     top: -1px;
     z-index: 10;

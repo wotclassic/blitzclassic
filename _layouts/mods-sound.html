@@ -31,10 +31,10 @@ layout: default
     <div class="tankopedia">
         <div class="nation-select">
             <ul class="nation-select_list js-nation-select-list">
-                <li class="nation-select_item nation-select_item__current">
-                    <a class="nation-select_link nation-select_link__usa" href="/mods">Рестайлинги</a>
-                </li>
                 <li class="nation-select_item">
+                    <a class="nation-select_link nation-select_link__usa" href="{{ '/mods' | relative_url }}">Рестайлинги</a>
+                </li>
+                <li class="nation-select_item nation-select_item__current">
                     <a class="nation-select_link nation-select_link__ussr" href="{{ '/mods/sounds' | relative_url }}">Звуковые моды</a>
                 </li>
                 <li class="nation-select_item">
@@ -47,11 +47,10 @@ layout: default
                 data-opened-class="tankopedia_item__opened">
                 <div class="tankopedia_title">
                     <span class="tankopedia_type tankopedia_type__heavytank" style="background-image: url(./img/maps.png); background-size: 24px; background-position: center;">heavytank</span>
-                    <h3 class="tankopedia_heading">Рестайлинги</h3>
+                    <h3 class="tankopedia_heading">Звук</h3>
                 </div>
                 <div class="tankopedia_vehicles">
-                    <p>Универсальная версия ремоделинга, обычно в таких модификациях изменяются текстуры карт/ангаров.
-                    </p>
+                    <p>Звуковые моды изменяют музыку, озвучку экипажа и многое другое.</p>
                     <ul class="vehicles-list">
                         <li class="vehicles-list_item vehicles-list_item">
                             <a class="vehicles-list_link js-tooltip js-tooltip-id_js-premium_tooltip"
@@ -59,34 +58,16 @@ layout: default
                                 <span class="vehicles-list_picture">
                                     <img class="vehicles-list_img" src="../assets/img/mods/maps/old_italy.jpg" alt="italy">
                                 </span>
-                                <span class="vehicles-list_text">Вечерние «Виноградники»</span>
-                            </a>
-                        </li>
-                        <li class="vehicles-list_item">
-                            <a class="vehicles-list_link" href="https://iblitzmods.ru/mods/366-old_middelburg.html">
-                                <span class="vehicles-list_picture">
-                                    <img class="vehicles-list_img" src="../assets/img/mods/maps/oldmid.png" alt="Old Mid">
-                                </span>
-                                <span class="vehicles-list_text">Старый «Миддлбург»</span>
-                            </a>
-                        </li>
-                        <li class="vehicles-list_item">
-                            <a class="vehicles-list_link"
-                                href="https://iblitzmods.ru/mods/352-restajling-karty-vechernij-baltijskij-schit.html">
-                                <span class="vehicles-list_picture">
-                                    <img class="vehicles-list_img" src="../assets/img/mods/maps/hallrock.png" alt="Hell Rockfield">
-                                </span>
-                                <span class="vehicles-list_text">Вечерний «Балтийский щит»</span>
+                                <span class="vehicles-list_text">Старая музыка</span>
                             </a>
                         </li>
                         <li class="vehicles-list_item vehicles-list_item">
                             <a class="vehicles-list_link js-tooltip js-tooltip-id_js-premium_tooltip"
-                                href="hhttps://forblitz.ru/map-restylings/misticheskii-baltiiskii-shchit/">
+                                href="https://forblitz.ru/map-restylings/restailing-vechernie-vinogradniki/">
                                 <span class="vehicles-list_picture">
-                                    <img class="vehicles-list_img" src="../assets/img/mods/maps/Halloween_Rockfield_2.0.png"
-                                        alt="Halloween_Rockfield_2.0">
+                                    <img class="vehicles-list_img" src="../assets/img/mods/maps/old_italy.jpg" alt="italy">
                                 </span>
-                                <span class="vehicles-list_text">Мистический «Балтийский щит»</span>
+                                <span class="vehicles-list_text">Старые звуки выстрелов</span>
                             </a>
                         </li>
                     </ul>

@@ -9,6 +9,9 @@ layout: default
     .footer_info {
         display: none;
     }
+    .navigation-header {
+        display: none;
+    }
 </style>
 
 <div class="page">
@@ -22,16 +25,16 @@ layout: default
                 <div class="menu_wrap">
                     <ul class="menu_list">
                         <li class="menu_item menu_item__current">
-                            <a class="menu_link_main" href="index.html">Главная</a>
+                            <a class="menu_link_main {% if page.url == "/" %}menu_link-active{% endif %}" href="{{ '/' | relative_url }}">Главная</a>
                         </li>
                         <li class="menu_item">
-                            <a class="menu_link_main" href="news.html">Новости</a>
+                            <a class="menu_link_main {% if page.url == "/news.html" %}menu_link-active{% endif %}" href="{{ '/news' | relative_url }}">Новости</a>
                         </li>
                         <li class="menu_item">
-                            <a class="menu_link_main" href="leaderboard.html">Зал славы</a>
+                            <a class="menu_link_main {% if page.url == "/leaderboard.html" %}menu_link-active{% endif %}" href="{{ '/leaderboard' | relative_url }}">Зал славы</a>
                         </li>
                         <li class="menu_item">
-                            <a class="menu_link_main" href="mods.html">Моды</a>
+                            <a class="menu_link_main {% if page.url == "/mods.html" %}menu_link-active{% endif %}" href="{{ '/mods' | relative_url }}">Моды</a>
                         </li>
                     </ul>
                 </div>
