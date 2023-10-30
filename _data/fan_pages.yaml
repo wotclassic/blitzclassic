@@ -1,22 +1,4 @@
-Ангар «9 Мая»:
-  image: /assets/img/mods/hangar/9mayhangar.png
-  categories: [Моды]
-  platform: windows
-  mod: hangar
-  button1: pc
-  button2: android
-  description: |
-    В данном ангаре ваши танки очутятся в дышащем праздником городе. Ослепительная мостовая, украшенные флажками улицы, грохот фейерверков и жужжание пролетающих над всем этим великолепием самолётов — всё, что нужно для торжественной и праздничной атмосферы.
-
-    ## Инструкция по установке
-
-     - Steam / Lesta Games Center: перенести папку Data из архива в директорию игры с заменой файлов.
-     - Android: Распаковать содержимое архива в папку с игрой по пути Android/Data/net.wargaming.wotblitz/files/packs
     
-  link1: WOW
-  link2: WAW
-  link3: UWU
-
 Вечерний «Балтийский щит»:
   image: /assets/img/mods/maps/hallrock.png
   categories: [Моды]
@@ -25,6 +7,8 @@
   mod: map
   button1: pc
   button2: android
+  link1: WOW
+  link2: WAW
   description: |
     Вы когда-нибудь бывали ночью вдали от города? Кромешная тьма, никаких фонарей, странные звуки — жуть, да и только.
 
@@ -41,6 +25,107 @@
      - Windows: перенести папку Data из архива в директорию игры с заменой файлов.
      - Android: Распаковать содержимое архива в папку с игрой по пути 
       `Android/Data/net.wargaming.wotblitz/files/packs`
-    
+
+Мистический «Балтийский щит»:
+  image: /assets/img/mods/maps/Halloween_Rockfield_2.0.png
+  categories: [Моды]
+  platform: windows
+  platform1: android
+  mod: map
+  button1: pc
+  button2: android
+  link1: https://forblitz.ru/wp-content/uploads/2021/09/balt_shit_steamfix.zip
+  link2: https://forblitz.ru/wp-content/uploads/2021/09/balt_shit_androidfix.zip
+  description: |
+    *Я расскажу вам... Одну историю. Это случилось давным-давно, страшное было время. Королевством правил ужасный "Дракула", чудовище, в людском обличии. Он истязал своих жертв и пил их кровь. Мало кто решался противостоять ему. А те, кто рискнул - пропадали навсегда.*
+
+    *Так и жили люди, в постоянном страхе. Но однажды пришел спаситель. Великий воин ордена света - "Хелсинг". Битва добра и зла случилась в последнюю ночь октября, это был жестокий бой. И лишь на рассвете Дракула был повержен, и тогда он изрек страшное пророчество: "И настанет день когда мы сразимся вновь, в другом мире, у нас будут железные колесницы на тысячи лошадях".*
+
+    *Время исполнить пророчество пришло.*
+
+    ## Инструкция по установке
+
+     - Windows: перенести папку Data из архива в директорию игры с заменой файлов.
+     - Android: Распаковать содержимое архива в папку с игрой по пути 
+      `Android/Data/net.wargaming.wotblitz/files/packs`
+
+Ангар «9 Мая»:
+  image: /assets/img/mods/hangar/9mayhangar.png
+  categories: [Моды]
+  platform: windows
+  mod: hangar
+  platform1: android
+  button1: pc
+  button2: android
   link1: WOW
   link2: WAW
+  description: |
+    В данном ангаре ваши танки очутятся в дышащем праздником городе. Ослепительная мостовая, украшенные флажками улицы, грохот фейерверков и жужжание пролетающих над всем этим великолепием самолётов — всё, что нужно для торжественной и праздничной атмосферы.
+
+    ## Инструкция по установке
+
+     - Steam / Lesta Games Center: перенести папку Data из архива в директорию игры с заменой файлов.
+     - Android: Распаковать содержимое архива в папку с игрой по пути Android/Data/net.wargaming.wotblitz/files/packs
+
+Старый базовый ангар:
+  image: /assets/img/mods/hangar/basic.png
+  categories: [Моды]
+  platform: windows
+  platform1: android
+  mod: hangar
+  button1: pc
+  button2: android
+  link1: https://forblitz.ru/wp-content/uploads/2023/07/hangarlow4_steam_10_3.zip
+  link2: https://forblitz.ru/wp-content/uploads/2023/07/hangarlowhd_android_10_3.zip
+  description: |
+    Самый первый, любимый и такой далекий ангар, который могли видеть игроки без премиум ангара до патча 4.6.
+
+    Многие ветераны World of Tanks Blitz вспоминают этот ангар с улыбкой на лице, ведь это был очень уютный и атмосферный ангар.
+
+    ## Инструкция по установке
+
+     - Windows: перенести папку Data из архива в директорию игры с заменой файлов.
+     - Android: Распаковать содержимое архива в папку с игрой по пути 
+      `Android/Data/net.wargaming.wotblitz/files/packs`
+
+Хэллоуин 2014/15:
+  image: /assets/img/mods/hangar/hell2015.png
+  categories: [Моды]
+  platform: windows
+  platform1: android
+  mod: hangar
+  button1: pc
+  button2: android
+  link1: WOW
+  link2: WAW
+  description: |
+    Вы переноситесь в ангар, где за вами наблюдают безмолвные пугала, загадочно улыбающиеся деревья, покрытый мраком особняк и призрачные силуэты в свете тыкв-фонарей. 
+    
+    Вы чувствуете, как холодный ветер обдает вас по спине, и слышите, как где-то за стеной звучит жуткий смех. Как кто-то или что-то приближается к вам, и слышите шорохи и шепоты за вашей спиной.
+    
+    Вы понимаете, что попали в ловушку, и что отсюда нет выхода. Вы пытаетесь пробиться в особняк рядом с вами, но жуткие статуи лишь прогоняют вас. 
+    
+    ## Инструкция по установке
+
+     - Windows: перенести папку Data из архива в директорию игры с заменой файлов.
+     - Android: Распаковать содержимое архива в папку с игрой по пути 
+      `Android/Data/net.wargaming.wotblitz/files/packs`
+
+Хэллоуин 2016:
+  image: /assets/img/mods/hangar/hell2016.png
+  categories: [Моды]
+  platform: windows
+  platform1: android
+  mod: hangar
+  button1: pc
+  button2: android
+  link1: WOW
+  link2: WAW
+  description: |
+    Вся ваша техника перенесётся из привычного ангара в крипту, где каменные статуи коварно умалчивают о некогда проводившихся здесь жутких экспериментах.
+    
+    ## Инструкция по установке
+
+     - Windows: перенести папку Data из архива в директорию игры с заменой файлов.
+     - Android: Распаковать содержимое архива в папку с игрой по пути 
+      `Android/Data/net.wargaming.wotblitz/files/packs`

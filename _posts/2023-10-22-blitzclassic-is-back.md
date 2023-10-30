@@ -1,5 +1,5 @@
 ---
-title: 'Возрождение Blitz Classic: моды и сайт'
+title: 'Возрождение Blitz Classic: моды'
 date: 2023-10-22 20:28:15 +0300
 tags: [important]
 category: events

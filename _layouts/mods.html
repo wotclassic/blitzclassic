@@ -46,7 +46,7 @@ layout: default
             <div class="tankopedia_item tankopedia_item__opened js-tankopedia-item"
                 data-opened-class="tankopedia_item__opened">
                 <div class="tankopedia_title">
-                    <span class="tankopedia_type tankopedia_type__heavytank" style="background-image: url(./img/maps.png); background-size: 24px; background-position: center;">heavytank</span>
+                    <span class="tankopedia_type tankopedia_type__heavytank" style="background-image: url({{ '/assets/img/mods/category/maps.png' | relative_url }}); background-size: 24px; background-position: center;">heavytank</span>
                     <h3 class="tankopedia_heading">Рестайлинги</h3>
                 </div>
                 <div class="tankopedia_vehicles">
@@ -56,6 +56,15 @@ layout: default
                         <li class="vehicles-list_item vehicles-list_item">
                             <a class="vehicles-list_link js-tooltip js-tooltip-id_js-premium_tooltip"
                                 href="https://forblitz.ru/map-restylings/restailing-vechernie-vinogradniki/">
+                                <span class="vehicles-list_picture">
+                                    <img class="vehicles-list_img" src="{{ '/assets/img/mods/maps/karieri.png' | relative_url }}" alt="italy">
+                                </span>
+                                <span class="vehicles-list_text">Старые «Карьеры»</span>
+                            </a>
+                        </li>
+                        <li class="vehicles-list_item vehicles-list_item">
+                            <a class="vehicles-list_link js-tooltip js-tooltip-id_js-premium_tooltip"
+                                href="https://forblitz.ru/modifications/map-restylings/restailing-vechernie-vinogradniki/6572/">
                                 <span class="vehicles-list_picture">
                                     <img class="vehicles-list_img" src="{{ '/assets/img/mods/maps/old_italy.jpg' | relative_url }}" alt="italy">
                                 </span>
@@ -81,7 +90,7 @@ layout: default
                         </li>
                         <li class="vehicles-list_item vehicles-list_item">
                             <a class="vehicles-list_link js-tooltip js-tooltip-id_js-premium_tooltip"
-                                href="hhttps://forblitz.ru/map-restylings/misticheskii-baltiiskii-shchit/">
+                                href="{{ '/mods/maps/misticrock' | relative_url }}">
                                 <span class="vehicles-list_picture">
                                     <img class="vehicles-list_img" src="{{ '/assets/img/mods/maps/Halloween_Rockfield_2.0.png' | relative_url }}"
                                         alt="Halloween_Rockfield_2.0">

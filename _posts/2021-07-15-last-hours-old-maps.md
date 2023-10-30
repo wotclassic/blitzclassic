@@ -1,7 +1,7 @@
 ---
 title: Последние часы старых карт в Blitz Classic
 date: 2021-07-15 20:44:00 +0300
-category: updates
+category: announcements
 image: "/assets/img/news/thumbnail/fire_800x391.png"
 ---
 
