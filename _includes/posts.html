@@ -35,9 +35,9 @@
 {% assign extrafix = 0 %}
 {% for post in posts | limit: 22 %}
     {% assign curcol = post_num | minus: 1 | modulo: 3 %}
-    <li class="news {% if post.tags contains 'important' %} news-big {% endif %}" style="transform: translate3d(0px, {{ maxheight | minus: colheight[curcol] | plus: extrafix | times: -185 }}px, 0px);">
+    <li class="news {% if post.tags contains 'important' %} news-big {% endif %}" style="transform: translate3d(0px, {{ maxheight | minus: colheight[curcol] | plus: extrafix | times: -185 }}px, 0px); {% if post.rtl contains 'rtl' %} direction: rtl; {% endif %}">
         <a href="{{ post.url | relative_url }}" class="news-lisst">
-            <span class="n-block-img {% if post.tags contains 'important' %} news-big-img {% endif %}" style="background-image: url({{ post.image | default: '/assets/img/announcement.png' | relative_url }})"></span>
+            <span class="n-block-img {% if post.tags contains 'important' %} news-big-img {% endif %}" style="background-image: url({{ post.image | default: '/assets/img/announcement.png' | relative_url }}); {% if post.rtl contains 'rtl' %} right: 1px; {% endif %}"></span>
             <div class="img-content {% if post.tags contains 'important' %} img-content-big {% endif %}">
                 <h5 class="img-headlink img-link {% if post.tags contains 'important' %} img-text-big {% endif %}">{{ post.title }}</h5>
                 <p class="n-img-date" style="margin: 0px;">
