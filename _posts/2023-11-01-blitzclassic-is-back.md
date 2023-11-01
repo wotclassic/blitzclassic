@@ -1,6 +1,6 @@
 ---
 title: '«Возрождение»: ноябрьское обновление модов'
-date: 2023-10-31 22:28:15 +0300
+date: 2023-11-01 22:20:15 +0300
 tags: [important]
 category: updates
 image: "/assets/img/news/thumbnail/bc_is_back.png"
@@ -13,7 +13,7 @@ image: "/assets/img/news/thumbnail/bc_is_back.png"
 
 **вставка видео**
 
-## Боевой нтерфейс
+## Боевой интерфейс
 {: style="color: #ffcc00;" }
 
 Что-то новое в серии модов - боевой интерфейс! 

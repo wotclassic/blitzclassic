@@ -3391,5 +3391,9 @@ table {
     text-decoration: none;
 }
 
+.b-share_theme_counter .b-share__link:hover .b-share-icon {
+    opacity: 1;
+}
+
 @import 'indev.scss';
 @import 'fan-page.scss';
