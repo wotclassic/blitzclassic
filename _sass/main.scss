@@ -3395,5 +3395,29 @@ table {
     opacity: 1;
 }
 
+.heading-1__error-page {
+    font-size: 60px;
+    text-transform: none;
+}
+
+.error-pages-txt {
+    font-size: 25px;
+    margin-bottom: 56px;
+    font-family: "WarHeliosCondC","Arial Narrow",Arial,sans-serif;
+    color: rgba(255,255,255,0.6);
+}
+
+.big-button__error-page {
+    font-size: 26px;
+    line-height: 60px;
+    height: 59px;
+    padding: 0 30px;
+    min-width: 181px;
+}
+
+.container__error {
+    text-align: center;
+}
+
 @import 'indev.scss';
 @import 'fan-page.scss';

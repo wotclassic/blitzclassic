@@ -3,37 +3,8 @@ permalink: /404.html
 title: Страница не найдена
 ---
 
-<style type="text/css" media="screen">
-  .container {
-    margin: 10px auto;
-    max-width: 600px;
-    text-align: center;
-  }
-
-  h1 {
-    margin: 30px 0;
-    font-size: 4em;
-    line-height: 1;
-    letter-spacing: -1px;
-  }
-
-  .footer {
-    display: none;
-  }
-
-  .brand-header {
-    display: none;
-  }
-
-  .navigation-header {
-    display: none;
-  }
-</style>
-
-<div class="container container__inner-page">
-  <h1 class="heading-1" style="text-align: center;">404</h1>
-  <p style="text-align: center;">Возможно, страница больше не существует или адрес введён неверно.</p>
-  <div class="bonus-code" style="text-align: center;">
-    <a href="{{ '/' | relative_url }}" target="_blank" style="">На главную</a>
-  </div>
+<div class="container container__inner-page container__error">
+  <h1 class="heading-1 heading-1__error-page">Страница не найдена</h1>
+  <p class="error-pages-txt">Возможно, страница больше не существует или адрес введён неверно.</p>
+  <a class="big-button big-button__error-page" href="{{ '/' | relative_url }}">На главную</a>
 </div>
