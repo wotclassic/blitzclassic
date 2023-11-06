@@ -1,4 +1,22 @@
-    
+Старые «Карьеры»:
+  image: /assets/img/mods/maps/karieri.png
+  categories: [Моды]
+  platform: windows
+  platform1: android
+  mod: map
+  button1: pc
+  button2: android
+  link1: https://forblitz.ru/wp-content/uploads/2021/09/old_career_steam.zip
+  link2: https://forblitz.ru/wp-content/uploads/2021/09/old_career_android.zip
+  description: |
+    Помните те самые «Карьеры»? Когда погода была более пасмурная и бой не казался таким ненастоящим. К сожалению, разработчики заменили её на более яркую версию, но не стоит унывать! Ведь с модом на старые «Карьеры» Вы вернетесь на то самое поле боя. 
+
+    ## Инструкция по установке
+
+     - Windows: перенести папку Data из архива в директорию игры с заменой файлов.
+     - Android: распаковать содержимое архива в папку с игрой по пути 
+      `Android/Data/net.wargaming.wotblitz/files/packs` или `Android/Data/com.tanksblitz/files/packs`. Также вы можете использовать приложение [ForBlitz](https://play.google.com/store/apps/details?id=ru.forblitz&hl=ru&gl=US).
+
 Вечерний «Балтийский щит»:
   image: /assets/img/mods/maps/hallrock.png
   categories: [Моды]
@@ -23,8 +41,29 @@
     ## Инструкция по установке
 
      - Windows: перенести папку Data из архива в директорию игры с заменой файлов.
-     - Android: Распаковать содержимое архива в папку с игрой по пути 
-      `Android/Data/net.wargaming.wotblitz/files/packs`
+     - Android: распаковать содержимое архива в папку с игрой по пути 
+      `Android/Data/net.wargaming.wotblitz/files/packs` или `Android/Data/com.tanksblitz/files/packs`. Также вы можете использовать приложение [ForBlitz](https://play.google.com/store/apps/details?id=ru.forblitz&hl=ru&gl=US)
+
+Вечерние «Виноградники»:
+  image: /assets/img/mods/maps/old_italy.jpg
+  categories: [Моды]
+  platform: windows
+  platform1: android
+  mod: map
+  button1: pc
+  button2: android
+  link1: https://forblitz.ru/wp-content/uploads/2021/08/italy_old_steam.zip
+  link2: https://forblitz.ru/wp-content/uploads/2021/08/italy_old_android.zip
+  description: |
+    Ветряные мельницы набирают обороты, под мостом нежно журчит река, а вокруг душистых кустов мерцают светлячки. Тёплый вечерний пейзаж освещается мягким закатом, погружающим низины в таинственный полумрак. Познакомьтесь с завораживающими «Виноградниками» — той самой картой из обновления 2.11!
+
+    Вечернее время суток добавляет разнообразие к уже имеющимся боевым локациям. Освещение на карте хорошо проработано: оно усиливает воссозданную здесь атмосферу и при этом не мешает комфортно вести бой.
+
+    ## Инструкция по установке
+
+     - Windows: перенести папку Data из архива в директорию игры с заменой файлов.
+     - Android: распаковать содержимое архива в папку с игрой по пути 
+      `Android/Data/net.wargaming.wotblitz/files/packs` или `Android/Data/com.tanksblitz/files/packs`. Также вы можете использовать приложение [ForBlitz](https://play.google.com/store/apps/details?id=ru.forblitz&hl=ru&gl=US)
 
 Мистический «Балтийский щит»:
   image: /assets/img/mods/maps/Halloween_Rockfield_2.0.png
@@ -46,26 +85,8 @@
     ## Инструкция по установке
 
      - Windows: перенести папку Data из архива в директорию игры с заменой файлов.
-     - Android: Распаковать содержимое архива в папку с игрой по пути 
-      `Android/Data/net.wargaming.wotblitz/files/packs`
-
-Ангар «9 Мая»:
-  image: /assets/img/mods/hangar/9mayhangar.png
-  categories: [Моды]
-  platform: windows
-  mod: hangar
-  platform1: android
-  button1: pc
-  button2: android
-  link1: WOW
-  link2: WAW
-  description: |
-    В данном ангаре ваши танки очутятся в дышащем праздником городе. Ослепительная мостовая, украшенные флажками улицы, грохот фейерверков и жужжание пролетающих над всем этим великолепием самолётов — всё, что нужно для торжественной и праздничной атмосферы.
-
-    ## Инструкция по установке
-
-     - Steam / Lesta Games Center: перенести папку Data из архива в директорию игры с заменой файлов.
-     - Android: Распаковать содержимое архива в папку с игрой по пути Android/Data/net.wargaming.wotblitz/files/packs
+     - Android: распаковать содержимое архива в папку с игрой по пути 
+      `Android/Data/net.wargaming.wotblitz/files/packs` или `Android/Data/com.tanksblitz/files/packs`. Также вы можете использовать приложение [ForBlitz](https://play.google.com/store/apps/details?id=ru.forblitz&hl=ru&gl=US)
 
 Старый базовый ангар:
   image: /assets/img/mods/hangar/basic.png
@@ -85,8 +106,26 @@
     ## Инструкция по установке
 
      - Windows: перенести папку Data из архива в директорию игры с заменой файлов.
-     - Android: Распаковать содержимое архива в папку с игрой по пути 
-      `Android/Data/net.wargaming.wotblitz/files/packs`
+     - Android: распаковать содержимое архива в папку с игрой по пути 
+      `Android/Data/net.wargaming.wotblitz/files/packs` или `Android/Data/com.tanksblitz/files/packs`. Также вы можете использовать приложение [ForBlitz](https://play.google.com/store/apps/details?id=ru.forblitz&hl=ru&gl=US)
+
+Ангар «9 Мая»:
+  image: /assets/img/mods/hangar/9mayhangar.png
+  categories: [Моды]
+  platform: windows
+  mod: hangar
+  platform1: android
+  button1: pc
+  button2: android
+  link1: WOW
+  link2: WAW
+  description: |
+    В данном ангаре ваши танки очутятся в дышащем праздником городе. Ослепительная мостовая, украшенные флажками улицы, грохот фейерверков и жужжание пролетающих над всем этим великолепием самолётов — всё, что нужно для торжественной и праздничной атмосферы.
+
+    ## Инструкция по установке
+
+     - Steam / Lesta Games Center: перенести папку Data из архива в директорию игры с заменой файлов.
+     - Android: распаковать содержимое архива в папку с игрой по пути Android/Data/net.wargaming.wotblitz/files/packs
 
 Хэллоуин 2014/15:
   image: /assets/img/mods/hangar/hell2015.png
@@ -108,8 +147,8 @@
     ## Инструкция по установке
 
      - Windows: перенести папку Data из архива в директорию игры с заменой файлов.
-     - Android: Распаковать содержимое архива в папку с игрой по пути 
-      `Android/Data/net.wargaming.wotblitz/files/packs`
+     - Android: распаковать содержимое архива в папку с игрой по пути 
+      `Android/Data/net.wargaming.wotblitz/files/packs` или `Android/Data/com.tanksblitz/files/packs`. Также вы можете использовать приложение [ForBlitz](https://play.google.com/store/apps/details?id=ru.forblitz&hl=ru&gl=US)
 
 Хэллоуин 2016:
   image: /assets/img/mods/hangar/hell2016.png
@@ -127,8 +166,8 @@
     ## Инструкция по установке
 
      - Windows: перенести папку Data из архива в директорию игры с заменой файлов.
-     - Android: Распаковать содержимое архива в папку с игрой по пути 
-      `Android/Data/net.wargaming.wotblitz/files/packs`
+     - Android: распаковать содержимое архива в папку с игрой по пути 
+      `Android/Data/net.wargaming.wotblitz/files/packs` или `Android/Data/com.tanksblitz/files/packs`. Также вы можете использовать приложение [ForBlitz](https://play.google.com/store/apps/details?id=ru.forblitz&hl=ru&gl=US)
 
 Хэллоуин 2017:
   image: /assets/img/mods/hangar/hell2017.png
@@ -147,8 +186,8 @@
     ## Инструкция по установке
 
      - Windows: перенести папку Data из архива в директорию игры с заменой файлов.
-     - Android: Распаковать содержимое архива в папку с игрой по пути 
-      `Android/Data/net.wargaming.wotblitz/files/packs`
+     - Android: распаковать содержимое архива в папку с игрой по пути 
+      `Android/Data/net.wargaming.wotblitz/files/packs` или `Android/Data/com.tanksblitz/files/packs`. Также вы можете использовать приложение [ForBlitz](https://play.google.com/store/apps/details?id=ru.forblitz&hl=ru&gl=US)
 
 Хэллоуин 2018/20:
   image: /assets/img/mods/hangar/hell2018.png
@@ -166,8 +205,8 @@
     ## Инструкция по установке
 
      - Windows: перенести папку Data из архива в директорию игры с заменой файлов.
-     - Android: Распаковать содержимое архива в папку с игрой по пути 
-      `Android/Data/net.wargaming.wotblitz/files/packs`
+     - Android: распаковать содержимое архива в папку с игрой по пути 
+      `Android/Data/net.wargaming.wotblitz/files/packs` или `Android/Data/com.tanksblitz/files/packs`. Также вы можете использовать приложение [ForBlitz](https://play.google.com/store/apps/details?id=ru.forblitz&hl=ru&gl=US)
 
 Хэллоуин 2019:
   image: /assets/img/mods/hangar/hell2019.png
@@ -187,8 +226,8 @@
     ## Инструкция по установке
 
      - Windows: перенести папку Data из архива в директорию игры с заменой файлов.
-     - Android: Распаковать содержимое архива в папку с игрой по пути 
-      `Android/Data/net.wargaming.wotblitz/files/packs`
+     - Android: распаковать содержимое архива в папку с игрой по пути 
+      `Android/Data/net.wargaming.wotblitz/files/packs` или `Android/Data/com.tanksblitz/files/packs`. Также вы можете использовать приложение [ForBlitz](https://play.google.com/store/apps/details?id=ru.forblitz&hl=ru&gl=US)
 
 Хэллоуин 2021:
   image: /assets/img/mods/hangar/hell2021.png
@@ -208,8 +247,8 @@
     ## Инструкция по установке
 
      - Windows: перенести папку Data из архива в директорию игры с заменой файлов.
-     - Android: Распаковать содержимое архива в папку с игрой по пути 
-      `Android/Data/net.wargaming.wotblitz/files/packs`
+     - Android: распаковать содержимое архива в папку с игрой по пути 
+      `Android/Data/net.wargaming.wotblitz/files/packs` или `Android/Data/com.tanksblitz/files/packs`. Также вы можете использовать приложение [ForBlitz](https://play.google.com/store/apps/details?id=ru.forblitz&hl=ru&gl=US)
 
 Хэллоуин 2022:
   image: /assets/img/mods/hangar/hell2022.png
@@ -228,5 +267,5 @@
     ## Инструкция по установке
 
      - Windows: перенести папку Data из архива в директорию игры с заменой файлов.
-     - Android: Распаковать содержимое архива в папку с игрой по пути 
-      `Android/Data/net.wargaming.wotblitz/files/packs`
+     - Android: распаковать содержимое архива в папку с игрой по пути 
+      `Android/Data/net.wargaming.wotblitz/files/packs` или `Android/Data/com.tanksblitz/files/packs`. Также вы можете использовать приложение [ForBlitz](https://play.google.com/store/apps/details?id=ru.forblitz&hl=ru&gl=US)

@@ -1,6 +1,6 @@
 ---
 title: 'дата - самый ожидаемый день этой осени'
-date: 2023-10-31 20:28:15 +0300
+date: 2024-10-31 20:28:15 +0300
 rtl: rtl
 category: announcements
 image: "/assets/img/news/thumbnail/bc_is_back.png"

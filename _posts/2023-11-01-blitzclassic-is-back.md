@@ -1,6 +1,6 @@
 ---
 title: '«Возрождение»: ноябрьское обновление модов'
-date: 2023-11-01 22:20:15 +0300
+date: 2025-11-01 22:20:15 +0300
 tags: [important]
 category: updates
 image: "/assets/img/news/thumbnail/bc_is_back.png"

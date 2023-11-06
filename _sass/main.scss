@@ -1640,13 +1640,9 @@ $yt-color: #cc181e;
 }
 
 .b-content hr {
-    background: url($baseurl+'/assets/img/delimeter.png') no-repeat center top;
-    border: none;
-    height: 2px;
-    clear: both;
-    margin: 20px -25px;
-    display: block;
-    overflow: hidden;
+    height: 1px;
+    border: 0;
+    background-color: rgba(255, 255, 255, 0.2);
 }
 
 .b-button__colored {

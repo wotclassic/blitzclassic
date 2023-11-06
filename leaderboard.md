@@ -17,7 +17,14 @@ title: Зал славы
     }
 </style>
 
-Сообщества, помогавшие с «Blitz Classic» или просто друзья автора.
+### Познакомьтесь с нашей командой!
+
+[geuonne](https://forblitz.ru/modifications/author/geuonne/) - отвечает за интерфейсные модификации.  
+[Conqradin](https://forblitz.ru/modifications/author/congueror-sashagmail-com/) - помогает с интерфейсными модификациями.
+
+---
+
+### Сообщества, помогавшие с «Blitz Classic»
 
 <div>
     <div class="tankopedia_content" style="margin-left: 0px;">
@@ -35,14 +42,6 @@ title: Зал славы
                         </a>
                     </li>
                     <li class="vehicles-list_item">
-                        <a class="vehicles-list_link" href="https://iblitzmods.ru/">
-                            <span class="vehicles-list_picture">
-                                <img class="vehicles-list_img" src="./assets/img/iBlitz.png" alt="iblitz">
-                            </span>
-                            <span class="vehicles-list_text">iBlitz</span>
-                        </a>
-                    </li>
-                    <li class="vehicles-list_item">
                         <a class="vehicles-list_link" href="https://forblitz.ru/">
                             <span class="vehicles-list_picture">
                                 <img class="vehicles-list_img" src="./assets/img/fb.png" alt="ForBlitz">
@@ -52,7 +51,7 @@ title: Зал славы
                     </li>
                     <li class="vehicles-list_item vehicles-list_item">
                         <a class="vehicles-list_link js-tooltip js-tooltip-id_js-premium_tooltip"
-                            href="https://vk.com/wotblitz7rat">
+                            href="https://vk.com/tanksblitz7rat">
                             <span class="vehicles-list_picture">
                                 <img class="vehicles-list_img" src="./assets/img/7RAT.png" alt="7rat">
                             </span>
@@ -64,3 +63,4 @@ title: Зал славы
         </div>
     </div>
 </div>
+<br>
