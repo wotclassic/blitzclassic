@@ -2813,6 +2813,8 @@ table {
     padding-top: 300px;
     text-align: center;
     padding-bottom: 45px;
+    top: -95px;
+    position: relative;
 }
 
 .container-main {
@@ -3410,10 +3412,46 @@ table {
     padding: 0 30px;
     min-width: 181px;
 }
-
 .container__error {
     text-align: center;
 }
+
+.menu-down {
+    bottom: 0;
+    height: 91px;
+    left: 0;
+    margin: 0;
+    position: fixed;
+    right: 0;
+    z-index: 100;
+    -webkit-transition: bottom 0.2s linear;
+    transition: bottom 0.2s linear;
+}
+
+.menu-down_social {
+    float: right;
+    margin-left: 0;
+    margin-right: 275px;
+    padding-top: 33px;
+}
+
+.share_inner {
+    background-color: transparent;
+    border-bottom: none;
+    box-shadow: none;
+    bottom: 0;
+    display: block;
+    padding: 0;
+    position: relative;
+    right: 0;
+}
+
+.share_inner {
+    border-top: none;
+    margin: 0;
+}
+
+
 
 @import 'indev.scss';
 @import 'fan-page.scss';

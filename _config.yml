@@ -61,7 +61,7 @@ defaults:
       type: "posts"
     values:
       layout: "post"
-      permalink: "/news/:title/"
+      permalink: "/news/:categories/:title/"
   - scope:
       path: ""
       type: "dev-posts"
