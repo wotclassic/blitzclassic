@@ -18,7 +18,6 @@
         <h1 class="heading-1">{{ include.title | upcase | default: НОВОСТИ }}</h1>
     {% endif %}
 </div>
-{% assign post_num = 1 %}
 
 {% if paginator != nil %}
     {% assign posts = paginator.posts %}
@@ -26,16 +25,8 @@
     {% assign posts = site.posts %}
 {% endif %}
 <ul class="nnews-list">
-{% assign colheight = "0 0 0" | split: " " %}
-{% assign curline = 0 %}
-{% assign colheight0 = colheight[0] %}
-{% assign colheight1 = colheight[1] %}
-{% assign colheight2 = colheight[2] %}
-{% assign maxheight = 0 %}
-{% assign extrafix = 0 %}
 {% for post in posts | limit: 22 %}
-    {% assign curcol = post_num | minus: 1 | modulo: 3 %}
-    <li class="news {% if post.tags contains 'important' %} news-big {% endif %}" style="transform: translate3d(0px, {{ maxheight | minus: colheight[curcol] | plus: extrafix | times: -185 }}px, 0px); {% if post.rtl contains 'rtl' %} direction: rtl; {% endif %}">
+    <li class="news {% if post.tags contains 'important' %} news-big {% endif %}" style="{% if post.rtl contains 'rtl' %} direction: rtl; {% endif %}">
         <a href="{{ post.url | relative_url }}" class="news-lisst">
             <span class="n-block-img {% if post.tags contains 'important' %} news-big-img {% endif %}" style="background-image: url({{ post.image | default: '/assets/img/announcement.png' | relative_url }}); {% if post.rtl contains 'rtl' %} right: 1px; {% endif %}"></span>
             <div class="img-content {% if post.tags contains 'important' %} img-content-big {% endif %}">
@@ -48,19 +39,72 @@
             </div>
         </a>
     </li>
-    {% assign post_num = post_num | plus: 1 %}
-    {% if curcol == 0 %}
-    {% if post.tags contains 'important' %}{% assign colheight0 = colheight0 | plus: 2 %}{% else %}{% assign colheight0 = colheight0 | plus: 1 %}{% endif %}
-    {% elsif curcol == 1 %}
-    {% if post.tags contains 'important' %}{% assign colheight1 = colheight1 | plus: 2 %}{% else %}{% assign colheight1 = colheight1 | plus: 1 %}{% endif %}
-    {% elsif curcol == 2 %}
-        {% if post.tags contains 'important' %}{% assign colheight2 = colheight2 | plus: 2 %}{% else %}{% assign colheight2 = colheight2 | plus: 1 %}{% endif %}
-        {% assign curline = curline | plus: 1 %}
-        {% assign maxheight = colheight0 | at_least: colheight1 | at_least: colheight2 %}
-    {% endif %}
-    
-    {% assign colheight = colheight0 | append: " " | append: colheight1 | append: " " | append: colheight2 | split: " " %}
 {% endfor %}
+</ul>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    function layoutMasonry() {
+        const container = document.getElementsByClassName('nnews-list')[0];
+        if (!container) return;
+
+        const items = Array.from(container.getElementsByClassName('news'));
+        if (items.length === 0) return;
+
+        const containerWidth = container.offsetWidth;
+        let columns = 3;
+        if (window.innerWidth <= 1024) columns = 2;
+
+        const itemWidth = 100 / columns;
+        const colHeights = new Array(columns).fill(0);
+        const colPositions = [];
+
+        for (let i = 0; i < columns; i++) {
+            colPositions.push(i * itemWidth);
+        }
+
+        items.forEach(item => {
+            const minHeight = Math.min(...colHeights);
+            const columnIndex = colHeights.indexOf(minHeight);
+
+            const left = colPositions[columnIndex];
+
+            item.style.position = 'absolute';
+            item.style.left = `calc(${left}%)`;
+            item.style.top = `${minHeight}px`;
+
+            colHeights[columnIndex] += item.offsetHeight + 17;
+            item.style.width = `${containerWidth / columns - 20}px`;
+        });
+
+        container.style.height = `${Math.max(...colHeights)}px`;
+    }
+
+    setTimeout(layoutMasonry, 100);
+
+    let resizeTimer;
+    window.addEventListener('resize', function() {
+        clearTimeout(resizeTimer);
+        resizeTimer = setTimeout(layoutMasonry, 100);
+    });
+
+    const images = document.querySelectorAll('.n-block-img');
+    images.forEach(img => {
+        if (img.complete) {
+            layoutMasonry();
+        } else {
+            img.addEventListener('load', layoutMasonry);
+            img.addEventListener('error', layoutMasonry);
+        }
+    });
+});
+</script>
+{% if post_num < 6 and paginator == nil %}
+    {% include suggestion-panel.html %}
+{% endif %}
+{% if page.url == '/' %}
+    <a href="{{ '/news/2' | relative_url }}" class="orange-arrow">Другие новости</a>
+{% endif %}
 </ul>
 {% if post_num < 6 and paginator == nil %}
     {% include suggestion-panel.html %}
