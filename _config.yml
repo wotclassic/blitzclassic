@@ -2,7 +2,7 @@ title: Blitz Classic
 description: >-
   Портал в прошлое прямо у тебя в кармане.
 baseurl: "/blitzclassic"
-url: "https://wotclassic.github.io"
+url: "https://wot-classic.ru"
 
 plugins:
   - jekyll-paginate-v2
