@@ -19,8 +19,8 @@ title: Зал славы
 
 ### Познакомьтесь с нашей командой!
 
-[geuonne](https://forblitz.ru/modifications/author/geuonne/) - отвечает за интерфейсные модификации.  
-[Conqradin](https://forblitz.ru/modifications/author/congueror-sashagmail-com/) - помогает с интерфейсными модификациями.
+Nikolay___49_0 (RUBY) - отвечает за интерфейсные модификации.  
+Blitz_Druaccula (RUBY)  - помогает с интерфейсными модификациями.
 
 ---
 

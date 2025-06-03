@@ -1,6 +1,6 @@
 ---
-title: 'дата - самый ожидаемый день этой осени'
-date: 20233-10-31 20:28:15 +0300
+title: 'Портал «Blitz Classic» вновь запущен'
+date: 2025-01-18 20:28:15 +0300
 rtl: rtl
 category: announcements
 image: "/assets/img/news/thumbnail/bc_is_back.png"
