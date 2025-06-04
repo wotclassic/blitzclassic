@@ -36,7 +36,7 @@ gem "webrick", "~> 1.8"
 gem 'kramdown-parser-gfm', :git => 'https://github.com/kramdown/parser-gfm.git'
 
 gem "stringex", "~> 2.8"
-
+gem 'sass-embedded', '~> 1.88'
 gem "logger", "~> 1.6"
 gem "csv", "~> 3.3"
 gem "ostruct", "~> 0.6.0"
