@@ -3,38 +3,47 @@ layout: default
 ---
 <div class="container">
     <div class="r-content">
-            <div class="news-picture" style="background-image: url({{ page.image | default: '/assets/img/announcement.png' | relative_url }});"></div>
-            <div class="social-inner">
-                <div class="share share__left">
-                    <div class="addthis_toolbox addthis_default_style ">
-                        <div class="js-yashare-element js-initialized b-share_theme_counter"><span class="b-share">
-                            <span class="b-share-btn__wrap"><a rel="nofollow" target="_blank" title="OpenVK" class="b-share__handle b-share__link b-share-btn__facebook" href="https://openvk.su/mrb">
-                                <span class="b-share-icon b-share-icon_facebook"></span>
-                                <span class="b-share-counter"></span>
-                            </a>
+        <div class="news-picture"
+            style="background-image: url({{ page.image | default: '/assets/img/announcement.png' | relative_url }});">
+        </div>
+        <div class="social-inner">
+            <div class="share share__left">
+                <div class="addthis_toolbox addthis_default_style ">
+                    <div class="b-share_theme_counter">
+                        <span class="b-share">
+                            <span class="b-share-btn__wrap">
+                                <a title="OpenVK" class="b-share__handle b-share__link b-share-btn__facebook" href="https://openvk.su/mrb">
+                                    <span class="b-share-icon b-share-icon_facebook"></span>
+                                    <span class="b-share-counter"></span>
+                                </a>
                             </span>
-                            <span class="b-share-btn__wrap"><a rel="nofollow" target="_blank" title="Telegram" class="b-share__handle b-share__link b-share-btn__twitter" href="https://t.me/mr_bendy">
-                                <span class="b-share-icon b-share-icon_twitter"></span>
-                                <span сlass="b-share-counter"></span>
-                            </a>
+                            <span class="b-share-btn__wrap">
+                                <a title="Telegram" class="b-share__handle b-share__link b-share-btn__twitter" href="https://t.me/mr_bendy">
+                                    <span class="b-share-icon b-share-icon_twitter"></span>
+                                    <span сlass="b-share-counter"></span>
+                                </a>
                             </span>
-                            <span class="b-share-btn__wrap"><a rel="nofollow" target="_blank" title="VepurOVK" class="b-share__handle b-share__link b-share-btn__gplus" href="https://vepurovk.xyz/mb">
-                                <span class="b-share-icon b-share-icon_gplus"></span>
-                                <span class="b-share-counter"></span>
-                            </a>
+                            <span class="b-share-btn__wrap">
+                                <a title="VepurOVK" class="b-share__handle b-share__link b-share-btn__gplus" href="https://vepurovk.xyz/mb">
+                                    <span class="b-share-icon b-share-icon_gplus"></span>
+                                    <span class="b-share-counter"></span>
+                                </a>
                             </span>
-                            <span class="b-share-btn__wrap"><a rel="nofollow" target="_blank" title="ВКонтакте" class="b-share__handle b-share__link b-share-btn__vkontakte" href="https://vk.com/mr.bendy" data-service="vkontakte"><span class="b-share-icon b-share-icon_vkontakte"></span>
-                                <span class="b-share-counter"></span>
-                            </a>
+                            <span class="b-share-btn__wrap">
+                                <a title="ВКонтакте" class="b-share__handle b-share__link b-share-btn__vkontakte" href="https://vk.com/mr.bendy">
+                                    <span class="b-share-icon b-share-icon_vkontakte"></span>
+                                    <span class="b-share-counter"></span>
+                                </a>
                             </span>
-                            </span>
-                        </div>
+                        </span>
                     </div>
                 </div>
-                <span class="forum-discuss">
-                    <a class="forum-discuss_link" href="https://forum.iblitzmods.ru/topic/325-blitz-classic-lampovyy-world-of-tanks-blitz">Обсудить на форуме</a>
-                </span>
             </div>
+            <span class="forum-discuss">
+                <a class="forum-discuss_link"
+                    href="https://forum.iblitzmods.ru/topic/325-blitz-classic-lampovyy-world-of-tanks-blitz">Обсудить на форуме</a>
+            </span>
+        </div>
         {% assign category_names = category_names | append: "Важные новости|Все новости" %}
         {% assign category_urls = category_urls | append: "/news/important|/news" %}
         {% assign category_names = category_names | split: "|" %}
@@ -51,51 +60,44 @@ layout: default
                 {{ content }}
                 <div class="social-inner social-inner__mobile">
                     <div class="share share__left">
-                        <script type="text/javascript" src="//web.archive.org/web/20151025175129js_/http://yandex.st/share/share.js" charset="utf-8"></script>
-            <script type="text/javascript">
-                var addthis_config = {
-                    ui_language: "ru"
-                };
-            </script>
-            
-            <div class="addthis_toolbox addthis_default_style ">
-                <div class="js-yashare-element js-initialized b-share_theme_counter" data-yasharelink="http://wotblitz.ru/ru/news/pc-browser/specials/goal-fv215-183/"><span class="b-share"><span class="b-share-btn__wrap"><a rel="nofollow" target="_blank" title="Facebook" class="b-share__handle b-share__link b-share-btn__facebook" href="https://web.archive.org/web/20151025182208/https://share.yandex.net/go.xml?service=facebook&amp;url=http%3A%2F%2Fwotblitz.ru%2Fru%2Fnews%2Fpc-browser%2Fspecials%2Fgoal-fv215-183%2F&amp;title=%D0%90%D0%BA%D1%86%D0%B8%D1%8F%20%C2%AB%D0%A6%D0%B5%D0%BB%D1%8C%3A%20FV215b%20(183)%C2%BB%20%7C%20%D0%90%D0%BA%D1%86%D0%B8%D0%B8%20%7C%20World%20of%20Tanks%20Blitz" data-service="facebook"><span class="b-share-icon b-share-icon_facebook"></span><span class="b-share-counter"></span></a></span><span class="b-share-btn__wrap"><a rel="nofollow" target="_blank" title="Twitter" class="b-share__handle b-share__link b-share-btn__twitter" href="https://web.archive.org/web/20151025182208/https://share.yandex.net/go.xml?service=twitter&amp;url=http%3A%2F%2Fwotblitz.ru%2Fru%2Fnews%2Fpc-browser%2Fspecials%2Fgoal-fv215-183%2F&amp;title=%D0%90%D0%BA%D1%86%D0%B8%D1%8F%20%C2%AB%D0%A6%D0%B5%D0%BB%D1%8C%3A%20FV215b%20(183)%C2%BB%20%7C%20%D0%90%D0%BA%D1%86%D0%B8%D0%B8%20%7C%20World%20of%20Tanks%20Blitz" data-service="twitter"><span class="b-share-icon b-share-icon_twitter"></span><span class="b-share-counter"></span></a></span><span class="b-share-btn__wrap"><a rel="nofollow" target="_blank" title="Google Plus" class="b-share__handle b-share__link b-share-btn__gplus" href="https://web.archive.org/web/20151025182208/https://share.yandex.net/go.xml?service=gplus&amp;url=http%3A%2F%2Fwotblitz.ru%2Fru%2Fnews%2Fpc-browser%2Fspecials%2Fgoal-fv215-183%2F&amp;title=%D0%90%D0%BA%D1%86%D0%B8%D1%8F%20%C2%AB%D0%A6%D0%B5%D0%BB%D1%8C%3A%20FV215b%20(183)%C2%BB%20%7C%20%D0%90%D0%BA%D1%86%D0%B8%D0%B8%20%7C%20World%20of%20Tanks%20Blitz" data-service="gplus"><span class="b-share-icon b-share-icon_gplus"></span><span class="b-share-counter"></span></a></span><span class="b-share-btn__wrap"><a rel="nofollow" target="_blank" title="ВКонтакте" class="b-share__handle b-share__link b-share-btn__vkontakte" href="https://web.archive.org/web/20151025182208/https://share.yandex.net/go.xml?service=vkontakte&amp;url=http%3A%2F%2Fwotblitz.ru%2Fru%2Fnews%2Fpc-browser%2Fspecials%2Fgoal-fv215-183%2F&amp;title=%D0%90%D0%BA%D1%86%D0%B8%D1%8F%20%C2%AB%D0%A6%D0%B5%D0%BB%D1%8C%3A%20FV215b%20(183)%C2%BB%20%7C%20%D0%90%D0%BA%D1%86%D0%B8%D0%B8%20%7C%20World%20of%20Tanks%20Blitz" data-service="vkontakte"><span class="b-share-icon b-share-icon_vkontakte"></span><span class="b-share-counter"></span></a></span><iframe style="display: none" src="//web.archive.org/web/20151025182208/http://yastatic.net/share/ya-share-cnt.html?url=http%3A%2F%2Fwotblitz.ru%2Fru%2Fnews%2Fpc-browser%2Fspecials%2Fgoal-fv215-183%2F&amp;services=facebook,twitter,gplus,vkontakte"></iframe></span></div>
-            </div>
-            <script type="text/javascript">
-            (function(window) {
-                var id = 'js-rand-' + Math.random(),
-                    $el = $('.js-yashare-element:not(.js-initialized)');
-            
-                if (window.Ya && window.Ya.share && $el.length) {
-                    $el.addClass('js-initialized');
-                
-                    window.yaShareWidgetConfig = {
-                        elementStyle: {
-                            type: 'button',
-                            quickServices: ['facebook', 'twitter', 'gplus', 'vkontakte']
-                        },
-                        element: $el.get(0),
-                        l10n: 'ru',
-                        
-                        
-                        
-                        theme: 'counter'
-                    };
-            
-                    if (typeof onYaShareReady === "function") {
-                        window.yaShareWidgetConfig.onready = onYaShareReady;
-                    }
-            
-                    window.yaShareInstance = new window.Ya.share(window.yaShareWidgetConfig); 
-                }
-            })(window);
-            </script>
+                        <div class="addthis_toolbox addthis_default_style ">
+                            <div class="b-share_theme_counter">
+                                <span class="b-share">
+                                    <span class="b-share-btn__wrap">
+                                        <a class="b-share__handle b-share__link b-share-btn__facebook"
+                                            href="https://openvk.su/mrb">
+                                            <span class="b-share-icon b-share-icon_facebook"></span>
+                                            <span class="b-share-counter"></span>
+                                        </a>
+                                    </span>
+                                    <span class="b-share-btn__wrap">
+                                        <a class="b-share__handle b-share__link b-share-btn__twitter"
+                                            href="https://t.me/mr_bendy">
+                                            <span class="b-share-icon b-share-icon_twitter"></span>
+                                            <span class="b-share-counter"></span>
+                                        </a>
+                                    </span>
+                                    <span class="b-share-btn__wrap">
+                                        <a class="b-share__handle b-share__link b-share-btn__gplus"
+                                            href="https://vepurovk.xyz/mb">
+                                            <span class="b-share-icon b-share-icon_gplus"></span>
+                                            <span class="b-share-counter"></span>
+                                        </a>
+                                    </span>
+                                    <span class="b-share-btn__wrap">
+                                        <a class="b-share__handle b-share__link b-share-btn__vkontakte"
+                                            href="https://vk.com/mr.bendy">
+                                            <span class="b-share-icon b-share-icon_vkontakte"></span>
+                                            <span class="b-share-counter"></span>
+                                        </a>
+                                    </span>
+                                </span>
+                            </div>
+                        </div>
                     </div>
-                    
-                        <span class="forum-discuss">
-                            <a class="forum-discuss_link" href="https://web.archive.org/web/20151025175129/http://forum.wotblitz.ru/index.php?/topic/26434-">Обсудить на форуме</a>
-                        </span>
-                    
+                    <span class="forum-discuss">
+                        <a class="forum-discuss_link" href="https://web.archive.org/web/20151025175129/http://forum.wotblitz.ru/index.php?/topic/26434-">Обсудить на форуме</a>
+                    </span>
                 </div>
             </div>
         </div>

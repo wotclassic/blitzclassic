@@ -150,6 +150,7 @@ td {
 
 body {
     background: url($baseurl+'/assets/img/back.jpg') fixed no-repeat 50% 0, url($baseurl+"/assets/img/error-bg.jpg") repeat 50% 0 #000;
+    background-attachment: inherit;
     min-width: 1000px;
     font-size: 15px;
     font-family: Arial,"Helvetica CY",Helvetica,sans-serif;
@@ -372,7 +373,9 @@ body {
 }
 
 .r-content {
-    width: 100%;
+    float: right;
+    margin-left: 50px;
+    width: 325px;
 }
 
 .container__inner-page {
@@ -394,7 +397,7 @@ body {
     background-size: cover;
     width: 100%;
     height: 281px;
-    box-shadow: inset 0 0 0 1px rgba(255,255,255,0.15);
+    box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.15);
     background-position: 50% 50%;
     margin-bottom: 40px;
 }
@@ -1401,8 +1404,8 @@ $yt-color: #cc181e;
     box-shadow: none;
     border: none;
     text-align: right;
-    padding-top: 110px;
-    margin-right: 13px;
+    padding-top: 80px;
+    margin-right: 10px;
     width: 452px;
     background-color: transparent;
 }
@@ -1479,7 +1482,7 @@ $yt-color: #cc181e;
 
 .box-shadow {
     margin-bottom: 40px;
-    display: block;
+    display: none;
 }
 
 .box-shadow-header {
@@ -3210,16 +3213,9 @@ table {
 }
 
 .social-inner {
-    display: block;
+    display: none;
     overflow: hidden;
     margin-bottom: 48px;
-}
-
-.share__left {
-    float: left;
-    display: inline-block;
-    text-align: left;
-    display: inline-block;
 }
 
 .share {
@@ -3353,7 +3349,6 @@ table {
     display: block;
     overflow: auto;
     width: 100%;
-    text-align: left;
     padding-top: 15px;
     margin-left: 0;
     vertical-align: middle;
@@ -3429,7 +3424,6 @@ table {
 .menu-down_social {
     float: right;
     margin-left: 0;
-    margin-right: 275px;
     padding-top: 33px;
 }
 
@@ -3452,82 +3446,11 @@ table {
 .social-inner__mobile {
     display: block;
     margin-bottom: 0;
-    margin-top: 50px
+    margin-top: 50px;
+    text-align: center;
 }
 
-@media screen and (min-device-width: 650px) and (min-device-height: 650px) and (min-width: 860px) {
-    a,
-    abbr,
-    acronym,
-    address,
-    applet,
-    b,
-    big,
-    blockquote,
-    caption,
-    center,
-    cite,
-    code,
-    dd,
-    del,
-    dfn,
-    div,
-    dl,
-    dt,
-    em,
-    fieldset,
-    font,
-    form,
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6,
-    html,
-    i,
-    iframe,
-    img,
-    ins,
-    kbd,
-    label,
-    legend,
-    li,
-    object,
-    ol,
-    p,
-    pre,
-    q,
-    s,
-    samp,
-    small,
-    span,
-    strike,
-    strong,
-    sub,
-    sup,
-    table,
-    tbody,
-    tfoot,
-    th,
-    thead,
-    tr,
-    tt,
-    u,
-    ul,
-    var {
-        margin: 0;
-        padding: 0;
-        border: 0;
-        outline: 0;
-        font-size: 100%;
-        vertical-align: baseline;
-        background: 0 0;
-    }
-
-    .news-picture {
-      width: 100%;
-    }
+@media screen and (min-width: 100px) {
     .r-content {
       //border: 1px solid green;
     }
@@ -3536,13 +3459,45 @@ table {
         align-items: center;
         flex-direction: column;
     }
-    
     .l-content {
     // border: 1px solid red;
     }
-    
+    .r-content {
+        width: 100%;
+    }
+    .slide__info {
+        padding: 40px 0;
+        background-image: url("/web/20181109111020im_/http://static-wbp-ru.gcdn.co/static/1.12/portal/css/scss/slide/img/info-slide-tab.jpg");
+        background-position: 50% 0;
+    }
+  }
+
+@media screen and (min-width: 1100px) and (min-width: 450px) {
     .r-content {
         width: 100%;
     }
 
-  }
+}
+
+@media screen and (min-width: 1450px) {
+    .r-content {
+        float: right;
+        margin-left: 50px;
+        width: 325px;
+    }
+    .box-shadow {
+        margin-bottom: 40px;
+        display: block;
+    }
+    .social-inner {
+        display: block;
+        overflow: hidden;
+        margin-bottom: 48px;
+    }
+    .social-inner__mobile {
+        display: none;
+    }
+    .navigation-header .navigation-head-centr {
+        margin: 0 auto;
+    }
+}
