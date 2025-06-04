@@ -41,6 +41,8 @@
     font-style: normal
 }
 
+@import 'fan-page.scss';
+
 html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td {
     margin: 0;
     padding: 0;
@@ -267,7 +269,8 @@ body {
 }
 
 .menu_list {
-    position: static;
+    position: relative;
+    margin-right: 4dvw;
     float: right;
     top: auto;
     height: 60px;
@@ -343,6 +346,7 @@ body {
     color: transparent;
     display: block;
     position: absolute;
+    margin-left: 3dvw;
     left: 0;
     top: 10px;
     width: 32px;
@@ -369,7 +373,7 @@ body {
 }
 
 .l-content {
-    overflow: hidden;
+  overflow: visible;
 }
 
 .r-content {
@@ -855,6 +859,8 @@ hr {
 .footer_info {
     padding-top: 51px;
     min-height: 97px;
+    margin-left: 3dvw;
+    margin-right: 3dvw;
 }
 
 .footer_stores {
@@ -1024,6 +1030,8 @@ p {
 .footer_main-wrap {
     height: auto;
     position: relative;
+    margin-left: 1dvw;
+    margin-right: 1dvw;
 }
 
 .footer_main-wrap {
@@ -1339,7 +1347,7 @@ $yt-color: #cc181e;
 
 .filter {
     position: absolute;
-    top: -50px;
+    top: -82px;
     right: 0;
     z-index: 10;
 }
@@ -2917,6 +2925,7 @@ table {
     padding-top: 58px;
     margin: 0;
     position: relative;
+    margin-left: 3dvw;
 }
 
 .menu {
@@ -3425,6 +3434,7 @@ table {
     float: right;
     margin-left: 0;
     padding-top: 33px;
+    margin-right: 14dvw;
 }
 
 .share_inner {
@@ -3454,21 +3464,19 @@ table {
     .r-content {
       //border: 1px solid green;
     }
-    .container {
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-    }
     .l-content {
     // border: 1px solid red;
     }
+    .heading-1 {
+        font-size: 40px;
+        font-family: "WarHeliosCondC", "Arial Narrow", Arial, sans-serif;
+        color: #fff;
+        margin: 321px 0 30px !important;
+        text-transform: uppercase;
+    }
     .r-content {
         width: 100%;
-    }
-    .slide__info {
-        padding: 40px 0;
-        background-image: url("/web/20181109111020im_/http://static-wbp-ru.gcdn.co/static/1.12/portal/css/scss/slide/img/info-slide-tab.jpg");
-        background-position: 50% 0;
+        margin-left: 0px;
     }
   }
 
@@ -3476,14 +3484,26 @@ table {
     .r-content {
         width: 100%;
     }
-
+    .l-content {
+        overflow: visible;
+    }
 }
 
-@media screen and (min-width: 1450px) {
+@media screen and (min-width: 1100px) {
+    .heading-1 {
+        font-size: 40px;
+        font-family: "WarHeliosCondC", "Arial Narrow", Arial, sans-serif;
+        color: #fff;
+        margin: 0px 0 30px !important;
+        text-transform: uppercase;
+    }
     .r-content {
         float: right;
         margin-left: 50px;
         width: 325px;
+    }
+    .l-content {
+        overflow: hidden;
     }
     .box-shadow {
         margin-bottom: 40px;

@@ -33,11 +33,11 @@ Nikolay___49_0 (RUBY) - отвечает за интерфейсные моди�
                 <ul class="vehicles-list">
                     <li class="vehicles-list_item vehicles-list_item">
                         <a class="vehicles-list_link js-tooltip js-tooltip-id_js-premium_tooltip"
-                            href="https://vk.com/modstech">
+                            href="https://t.me/modstechteam">
                             <span class="vehicles-list_picture">
-                                <img class="vehicles-list_img" src="./assets/img/MT.png" alt="modstech">
+                                <img class="vehicles-list_img" src="./assets/img/MT.png" alt="qs">
                             </span>
-                            <span class="vehicles-list_text">ModsTech</span>
+                            <span class="vehicles-list_text">Qirashi SQUAD</span>
                         </a>
                     </li>
                     <li class="vehicles-list_item">

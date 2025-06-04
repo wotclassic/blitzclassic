@@ -21,6 +21,6 @@ image: "/assets/img/news/thumbnail/birthday_2_800x391.png"
 # Старые "Карьеры"
 Карта "Карьеры" вернула свой старый вид, теперь это сново родное для вас место, которым многое запомнилось именно в старом виде. На карте изменена текстура неба, земли и краёв.
 
-[![karieri]({{ '/assets/img/news/screens/middelburg.png' | relative_url}}){: width="100%" }](/assets/img/news/screens/middelburg.png)
+[![karieri]({{ '/assets/img/news/screens/blitzclassic2.png' | relative_url}}){: width="100%" }](/assets/img/news/screens/blitzclassic2.png)
 
 На этом все. Присоединяйтесь к нашей вечеринке и удачи на полях сражений!
