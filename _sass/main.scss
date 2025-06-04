@@ -372,9 +372,7 @@ body {
 }
 
 .r-content {
-    float: right;
-    margin-left: 50px;
-    width: 325px;
+    width: 100%;
 }
 
 .container__inner-page {
@@ -3451,7 +3449,100 @@ table {
     margin: 0;
 }
 
+.social-inner__mobile {
+    display: block;
+    margin-bottom: 0;
+    margin-top: 50px
+}
 
+@media screen and (min-device-width: 650px) and (min-device-height: 650px) and (min-width: 860px) {
+    a,
+    abbr,
+    acronym,
+    address,
+    applet,
+    b,
+    big,
+    blockquote,
+    caption,
+    center,
+    cite,
+    code,
+    dd,
+    del,
+    dfn,
+    div,
+    dl,
+    dt,
+    em,
+    fieldset,
+    font,
+    form,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    html,
+    i,
+    iframe,
+    img,
+    ins,
+    kbd,
+    label,
+    legend,
+    li,
+    object,
+    ol,
+    p,
+    pre,
+    q,
+    s,
+    samp,
+    small,
+    span,
+    strike,
+    strong,
+    sub,
+    sup,
+    table,
+    tbody,
+    tfoot,
+    th,
+    thead,
+    tr,
+    tt,
+    u,
+    ul,
+    var {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        outline: 0;
+        font-size: 100%;
+        vertical-align: baseline;
+        background: 0 0;
+    }
 
-@import 'indev.scss';
-@import 'fan-page.scss';
+    .news-picture {
+      width: 100%;
+    }
+    .r-content {
+      //border: 1px solid green;
+    }
+    .container {
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    .l-content {
+    // border: 1px solid red;
+    }
+    
+    .r-content {
+        width: 100%;
+    }
+
+  }
