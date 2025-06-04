@@ -3,6 +3,7 @@ title: Последние часы старых карт в Blitz Classic
 date: 2021-07-15 20:44:00 +0300
 category: announcements
 image: "/assets/img/news/thumbnail/fire_800x391.png"
+rtl: rtl
 ---
 
 Огромное количество изменений, как внутренних, так и внешних. В общем, нам есть что показать и рассказать.

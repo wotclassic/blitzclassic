@@ -3,7 +3,6 @@ title: Миддлбург
 date: 2021-04-11 20:01:00 +0300
 category: guide
 image: "/assets/img/news/thumbnail/middelburg.png"
-rtl: rtl
 ---
 <p style="display: none">М-м-м... Весна, самая лучшая пора, все цветет и пахнет... И разработчики «WoT это Классика!» готовы предоставить вам одно из глобальных обновлений модов!</p>
 
