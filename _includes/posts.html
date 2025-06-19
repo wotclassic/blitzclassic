@@ -53,8 +53,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
         const containerWidth = container.offsetWidth;
         let columns = 3;
-        if (window.innerWidth <= 1024) columns = 2;
-
+        if (window.innerWidth <= 1024) columns = 2; /// Yuratos - джаваскрипт ебучий, я его полчаса искал.
+        if (window.innerWidth <= 680) columns = 1;
+        
         const itemWidth = 100 / columns;
         const colHeights = new Array(columns).fill(0);
         const colPositions = [];
