@@ -4562,7 +4562,6 @@ body.phone-optimized #wrapper {
 
 .wrapper-with-footer {
     min-height: 100%;
-    padding-bottom: 50px
 }
 
 #body-content {
@@ -7225,7 +7224,7 @@ table.purchase-details-table tr:last-child {
 .expandable {
     margin-left: -50px;
     overflow: hidden;
-    padding: 0 50px;
+    padding: 0px 50px 76px;
     position: relative;
     width: 100%
 }
@@ -7461,8 +7460,7 @@ body.phone-optimized #show-more-button {
 }
 
 .footer {
-    background: #e5e5e5;
-    color: #555;
+    color: #b1b2b2;
     font-weight: 400;
     padding-bottom: 30px;
     width: 100%
@@ -13921,7 +13919,7 @@ td.device-edit-field {
 
 .nav-container.sticky {
     position: fixed;
-    top: 0
+    top: 35px;
 }
 
 .nav {
