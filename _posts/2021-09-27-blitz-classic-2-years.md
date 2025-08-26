@@ -6,9 +6,6 @@ tags: [important]
 image: "/assets/img/news/thumbnail/birthday_2_800x391.png"
 ---
 
-Прямиком из "закулисья" «WoT это Классика!» к вам мчится обзор предстоящего премиум ангара v2 от Pbody -iwnl-!
-{: style="display: none"}
-
 # Начинаем вечеринку!
 
 Командиры!
