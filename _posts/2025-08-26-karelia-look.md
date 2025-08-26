@@ -1,7 +1,7 @@
 ---
 title: 'Балтийский щит'
 date: 2025-08-26 22:50:15 +0300
-category: updates
+category: announcements
 image: "/assets/img/news/thumbnail/rockfield_c_800x391.png"
 ---
 
