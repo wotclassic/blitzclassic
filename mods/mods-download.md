@@ -105,7 +105,7 @@ title: Скачать моды «Blitz Classic»
             <ul class="nation-select_list js-nation-select-list" style="display: flex;">
                 <p class="nation-select_item" style="margin-top: 25px;">
                     <a class="nation-select_link nation-select_link__usa"
-                        href="{{ '/mods' | relative_url }}">Рестайлинги</a>
+                        href="{{ '/mods/restyle' | relative_url }}">Рестайлинги</a>
                 </p>
                 <p class="nation-select_item" style="margin-left: 10px; margin-right: 10px;">
                     <a class="nation-select_link nation-select_link__ussr"
