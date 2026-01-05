@@ -1,5 +1,5 @@
 ---
 layout: download
-permalink: /mods/download
-title: Скачать моды «WoT это Классика!»
+permalink: /mods/download/old
+title: Скачать моды «Blitz Classic» для Android
 ---
