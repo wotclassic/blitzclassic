@@ -4,6 +4,18 @@ title: Зал славы
 ---
 
 <style>
+    h1, .b-header-h1 {
+        font-family: "WarHeliosCondC", "Arial Narrow", Arial, sans-serif;
+        margin: 31px 0 31px;
+        font-size: 30px;
+        line-height: 30px;
+        color: #fff;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        text-shadow: #000 0 1px 0;
+        text-align: center;
+    }
     .b-content ul li {
         margin-bottom: 0px;
         padding-left: 9px;
@@ -17,13 +29,19 @@ title: Зал славы
     }
 </style>
 
-### Познакомьтесь с нашей командой!
+## Познакомьтесь с нашей командой!
+{: style="text-align: center" }
 
-Nikolay___49_0 (RUBY) - отвечает за интерфейсные модификации.  
+{% include name.html text="Nikolay___49_0 (RUBY)" desc="Отвечает за интерфейсные модификации." bg="./assets/img/lead/ui.png" type="./assets/img/mods/category/ui.png" %}
+{% include name.html text="Призрак коммунизма" desc="Помощь в реализации старых карт." bg="./assets/img/lead/maps.png" type="./assets/img/mods/category/maps.png" %}
+
+{% include name.html text="Ta_CaMa9I_AkyJla_u3_IKEA (EU)" desc="Перенос модпака на EU-регион и работа с SD-моделями." bg="./assets/img/lead/sd_eu.png" type="./assets/img/counter.gif" %}
+{% include name.html text="_RoZeTka_ (EU)" desc="Перенос модпака на EU-регион и работа с SD-моделями." bg="./assets/img/lead/sd_eu.png" type="./assets/img/counter.gif" %}
 
 ---
 
-### Сообщества, помогавшие с «Blitz Classic»
+## Сообщества, помогавшие с «Blitz Classic»
+{: style="text-align: center" }
 
 <div>
     <div class="tankopedia_content" style="margin-left: 0px;">
@@ -62,4 +80,4 @@ Nikolay___49_0 (RUBY) - отвечает за интерфейсные моди�
         </div>
     </div>
 </div>
-<br>
+{: style="text-align: center" }
