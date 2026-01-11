@@ -32,7 +32,7 @@ title: Зал славы
 ## Познакомьтесь с нашей командой!
 {: style="text-align: center" }
 
-{% include name.html text="Nikolay___49_0 (RUBY)" desc="Отвечает за интерфейсные модификации." bg="./assets/img/lead/ui.png" type="./assets/img/mods/category/ui.png" %}
+{% include name.html text="Nikolay___49_0 (RUBY)" desc="Отвечает за интерфейсные модификации." bg="./assets/img/lead/ui.png" type="./assets/img/mods/category/UI.png" %}
 {% include name.html text="Призрак коммунизма" desc="Помощь в реализации старых карт." bg="./assets/img/lead/maps.png" type="./assets/img/mods/category/maps.png" %}
 
 {% include name.html text="Ta_CaMa9I_AkyJla_u3_IKEA (EU)" desc="Перенос модпака на EU-регион и работа с SD-моделями." bg="./assets/img/lead/sd_eu.png" type="./assets/img/counter.gif" %}
