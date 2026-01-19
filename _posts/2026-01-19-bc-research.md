@@ -1,6 +1,6 @@
 ---
 title: 'Blitz Classic: Research - От фанатов фанатам'
-date: 2026-01-18 22:57:15 +0300
+date: 2026-01-19 17:40:15 +0300
 category: announcements
 image: "/assets/img/news/thumbnail/techworks_c_800x391.png"
 ---
