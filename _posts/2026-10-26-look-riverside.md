@@ -1,7 +1,7 @@
 ---
 title: Протока
 date: 2026-10-26 02:01:00 +0300
-category: guide
+category: announcements
 image: "/assets/img/news/thumbnail/riverside_800x391.png"
 ---
 
