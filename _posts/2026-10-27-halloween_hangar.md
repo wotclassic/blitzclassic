@@ -1,6 +1,6 @@
 ---
 title: Привидения в Ангаре
-date: 2026-10-27 00:00:00 +0300
+date: 2026-10-27
 category: announcements
 image: "/assets/img/news/thumbnail/halloween-2_c_800x391.png"
 ---
