@@ -80,6 +80,12 @@ title: Скачать моды «Blitz Classic»
 
 {% include button-download.html text="Загрузите на" device="/assets/img/windows.svg" text_device="Windows" link="https://files.valspace.ru/bc_mods/Lesta/SD_Models%20Lesta.rar" %}
 
+[Скачать моды из Telegram-канала](https://t.me/mr_bendy/3556)
+##### (основной сервер спит)
+
+<br>
+<br>
+
 ---
 
 ### ФАЙЛЫ ОСНОВНОГО МОДПАКА

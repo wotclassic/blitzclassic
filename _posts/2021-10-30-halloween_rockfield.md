@@ -1,5 +1,5 @@
 ---
-title: Леденящий кровь «Балтийский щит»
+title: Вечерний «Балтийский щит»
 date: 2021-10-30 20:01:00 +0300
 category: guide
 image: "/assets/img/news/thumbnail/hellrock_800x391.png"
