@@ -16,11 +16,9 @@ image: "/assets/img/news/thumbnail/riverside_800x391.png"
 
 А вот и несколько скриншотов переработанной «Протоки».
 
-[![karieri]({{ '/assets/img/news/screens/maps/riverside/riverside1.png' | relative_url}}){: width="100%" }](/assets/img/news/screens/maps/riverside/riverside1.png)
-[![karieri]({{ '/assets/img/news/screens/maps/riverside/riverside2.png' | relative_url}}){: width="100%" }](/assets/img/news/screens/maps/riverside/riverside2.png)
-[![karieri]({{ '/assets/img/news/screens/maps/riverside/riverside3.png' | relative_url}}){: width="100%" }](/assets/img/news/screens/maps/riverside/riverside3.png)
-[![karieri]({{ '/assets/img/news/screens/maps/riverside/riverside4.png' | relative_url}}){: width="100%" }](/assets/img/news/screens/maps/riverside/riverside4.png)
-[![karieri]({{ '/assets/img/news/screens/maps/riverside/riverside5.png' | relative_url}}){: width="100%" }](/assets/img/news/screens/maps/riverside/riverside5.png)
-[![karieri]({{ '/assets/img/news/screens/maps/riverside/riverside6.png' | relative_url}}){: width="100%" }](/assets/img/news/screens/maps/riverside/riverside6.png)
-
-
+[![riverside]({{ '/assets/img/news/screens/maps/riverside/riverside1.png' | relative_url}}){: width="100%" }]({{ "/assets/img/news/screens/maps/riverside/riverside1.png" | relative_url }})
+[![riverside]({{ '/assets/img/news/screens/maps/riverside/riverside2.png' | relative_url}}){: width="100%" }]({{ "/assets/img/news/screens/maps/riverside/riverside2.png" | relative_url }})
+[![riverside]({{ '/assets/img/news/screens/maps/riverside/riverside3.png' | relative_url}}){: width="100%" }]({{ "/assets/img/news/screens/maps/riverside/riverside3.png" | relative_url }})
+[![riverside]({{ '/assets/img/news/screens/maps/riverside/riverside4.png' | relative_url}}){: width="100%" }]({{ "/assets/img/news/screens/maps/riverside/riverside4.png" | relative_url }})
+[![riverside]({{ '/assets/img/news/screens/maps/riverside/riverside5.png' | relative_url}}){: width="100%" }]({{ "/assets/img/news/screens/maps/riverside/riverside5.png" | relative_url }})
+[![riverside]({{ '/assets/img/news/screens/maps/riverside/riverside6.png' | relative_url}}){: width="100%" }]({{ "/assets/img/news/screens/maps/riverside/riverside6.png" | relative_url }})
